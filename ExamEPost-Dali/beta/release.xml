@@ -1,0 +1,9 @@
+﻿<Release Version="2012.10.23.1">
+  <Files>
+    <File Name="ExampEPost.dll" Folder="" Size="2270720" Digest="967I3jbnii4eide4J27XtIzRZOA=">
+      <AssemblyName>ExampEPost, Version=2012.10.23.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>2012.10.23.1</Version>
+    </File>
+    <File Name="ExampEPost.pdb" Folder="" Size="138752" Digest="YERKjBexl2BZAGlU1DFziRhHd3o=" />
+  </Files>
+</Release>

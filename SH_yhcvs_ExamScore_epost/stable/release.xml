@@ -1,0 +1,9 @@
+﻿<Release Version="0.0.0.6">
+  <Files>
+    <File Name="SH_yhcvs_ExamScore_epost.dll" Folder="" Size="2379264" Digest="z5ObnPUUbwAc+lQYru3qygVVeaI=">
+      <AssemblyName>SH_yhcvs_ExamScore_epost, Version=1.0.0.6, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.6</Version>
+    </File>
+    <File Name="SH_yhcvs_ExamScore_epost.pdb" Folder="" Size="165376" Digest="riOUah6eI5hC9u84DXza4qeiL+g=" />
+  </Files>
+</Release>

@@ -1,0 +1,9 @@
+﻿<Release Version="0.0.0.8">
+  <Files>
+    <File Name="SemesterScoreReportNewEpost.dll" Folder="" Size="141824" Digest="bWi+EKNFsSzTd0SAOuFYMltzORk=">
+      <AssemblyName>SemesterScoreReportNewEpost, Version=1.0.0.8, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.8</Version>
+    </File>
+    <File Name="SemesterScoreReportNewEpost.pdb" Folder="" Size="93696" Digest="xb/WAtgooGxZtz+u21ezR510AIg=" />
+  </Files>
+</Release>

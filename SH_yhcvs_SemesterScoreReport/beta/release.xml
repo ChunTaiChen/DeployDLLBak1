@@ -1,0 +1,9 @@
+﻿<Release Version="0.0.0.12">
+  <Files>
+    <File Name="SH_yhcvs_SemesterScoreReport.dll" Folder="" Size="2544640" Digest="0+YGLCCTLJ/dk6Yufie0E8/odxY=">
+      <AssemblyName>SH_yhcvs_SemesterScoreReport, Version=1.0.0.13, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.13</Version>
+    </File>
+    <File Name="SH_yhcvs_SemesterScoreReport.pdb" Folder="" Size="159232" Digest="d3TfQmhGcM9Q/t6VDVndKFR94sk=" />
+  </Files>
+</Release>

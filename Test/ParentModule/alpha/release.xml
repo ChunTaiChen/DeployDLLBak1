@@ -1,0 +1,9 @@
+﻿<Release Version="0.0.0.3">
+  <Files>
+    <File Name="ParentModule.dll" Folder="" Size="222208" Digest="G1nP8H/JAK7S2WtPS/9MWtpFIro=">
+      <AssemblyName>ParentModule, Version=1.0.0.5, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.5</Version>
+    </File>
+    <File Name="ParentModule.pdb" Folder="" Size="177664" Digest="bKV07NqOJn1eDakFH9PgmH431BU=" />
+  </Files>
+</Release>

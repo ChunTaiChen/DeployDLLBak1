@@ -1,0 +1,9 @@
+﻿<Release Version="1.0.4.9">
+  <Files>
+    <File Name="K12.Retake.Shinmin.dll" Folder="" Size="892928" Digest="UxNNL8TxvmFpSIFGIoVSK93cGw8=">
+      <AssemblyName>K12.Retake.Shinmin, Version=1.0.0.81, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.81</Version>
+    </File>
+    <File Name="K12.Retake.Shinmin.pdb" Folder="" Size="634368" Digest="pZ/0Zd7MwufeJWcBnPJlOEv/iKs=" />
+  </Files>
+</Release>

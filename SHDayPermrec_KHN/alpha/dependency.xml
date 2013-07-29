@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependency>
+  <Assembly FullName="OfficialStudentRecord, Version=1.0.0.6, Culture=neutral, PublicKeyToken=null">
+    <Reference FullName="FISCA.Presentation, Version=1.1.0.18, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="DevComponents.DotNetBar2, Version=9.5.0.1, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04" />
+    <Reference FullName="SmartSchool.Customization.PlugIn, Version=1.1.4.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="Aspose.Words, Version=4.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56" />
+    <Reference FullName="SmartSchool.Customization.Data, Version=1.3.0.1, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA, Version=2.1.4.2, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="K12.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.Permission, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="K12.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.Data, Version=1.0.0.3, Culture=neutral, PublicKeyToken=null" />
+  </Assembly>
+  <Assembly FullName="SHStudentCard, Version=1.0.0.6, Culture=neutral, PublicKeyToken=null">
+    <Reference FullName="FISCA.Presentation, Version=1.1.0.16, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="DevComponents.DotNetBar2, Version=9.5.0.1, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04" />
+    <Reference FullName="Campus.Report, Version=1.0.0.11, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="SHSchool.Data, Version=1.9.2.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="Aspose.Words, Version=4.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56" />
+    <Reference FullName="FISCA.Data, Version=1.0.0.3, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="K12.Data, Version=1.9.3.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="Aspose.BarCode, Version=2.3.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56" />
+    <Reference FullName="FISCA, Version=2.1.3.12, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="K12.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.Permission, Version=1.1.0.11, Culture=neutral, PublicKeyToken=null" />
+  </Assembly>
+  <Assembly FullName="SmartSchool.GovernmentalDocument.HS, Version=1.0.4.5, Culture=neutral, PublicKeyToken=null">
+    <Reference FullName="SmartSchool.Common.DotNetBar, Version=1.0.0.7, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="SmartSchool.Customization.PlugIn, Version=1.1.4.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.Presentation, Version=1.0.2.9, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="SmartSchool.Customization.Data, Version=1.3.0.1, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="DevComponents.DotNetBar2, Version=9.5.0.1, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04" />
+    <Reference FullName="SHSchool.Data, Version=1.9.2.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.DSAUtil, Version=3.9.0.9, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.Permission, Version=1.0.0.7, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="K12.Data, Version=1.4.0.4, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="IntelliSchool.DSA.ClientFramework, Version=1.2.2.1, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.Data, Version=1.0.0.3, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="SmartSchool.Common, Version=1.0.0.7, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="SmartSchool.AccessControl, Version=1.0.0.6, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="SmartSchool.Core.General, Version=1.0.7.3, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="SmartSchool.Core, Version=1.0.3.1, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="iAccess, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="K12.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="Aspose.Cells, Version=4.3.0.0, Culture=neutral, PublicKeyToken=9a40d5a4b59e5256" />
+    <Reference FullName="SmartSchool.Broadcaster, Version=1.0.0.4, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA, Version=2.1.4.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="SmartSchool.ExceptionHandler, Version=1.9.0.2, Culture=neutral, PublicKeyToken=null" />
+  </Assembly>
+  <Assembly FullName="UpdateRecordModule_KHSH_N, Version=1.0.0.3, Culture=neutral, PublicKeyToken=null">
+    <Reference FullName="FISCA.Presentation, Version=1.1.0.18, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="Campus.Import, Version=1.0.8.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="SmartSchool.Common.DotNetBar, Version=1.0.0.6, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="Campus.DocumentValidator, Version=1.0.0.6, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="SmartSchool.API.PlugIn, Version=0.0.0.3, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.Permission, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="SHSchool.Data, Version=1.9.2.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="K12.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="DevComponents.DotNetBar2, Version=9.5.0.1, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04" />
+    <Reference FullName="IntelliSchool.DSA.ClientFramework, Version=1.2.2.1, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="Aspose.Cells, Version=4.3.0.0, Culture=neutral, PublicKeyToken=9a40d5a4b59e5256" />
+    <Reference FullName="SmartSchool.Customization.Data, Version=1.3.0.1, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="SmartSchool.Core, Version=1.0.2.17, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.DSAUtil, Version=3.9.0.9, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.DSAUtil, Version=3.9.0.10, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.Data, Version=1.0.0.3, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA, Version=2.1.4.2, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="K12.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="SmartSchool.Core.General, Version=1.0.6.9, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="SmartSchool.Customization.PlugIn, Version=1.1.4.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="SmartSchool.Common, Version=1.0.0.6, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.LogAgent, Version=1.0.0.6, Culture=neutral, PublicKeyToken=null" />
+  </Assembly>
+  <Assembly FullName="UpdateRecordViewForm, Version=1.0.0.4, Culture=neutral, PublicKeyToken=null">
+    <Reference FullName="FISCA.Presentation, Version=1.0.2.9, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="DevComponents.DotNetBar2, Version=9.5.0.1, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04" />
+    <Reference FullName="Aspose.Cells, Version=4.3.0.0, Culture=neutral, PublicKeyToken=9a40d5a4b59e5256" />
+    <Reference FullName="SHSchool.Data, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.DSAUtil, Version=3.9.0.9, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA, Version=1.9.1.9, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="SHSchool.Affair, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.Permission, Version=1.0.0.7, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="Framework, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="K12.Data, Version=1.4.0.4, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="K12.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="UpdateRecordModule_SH, Version=1.0.0.44, Culture=neutral, PublicKeyToken=null" />
+    <Reference FullName="FISCA.Authentication, Version=1.9.0.5, Culture=neutral, PublicKeyToken=null" />
+  </Assembly>
+</Dependency>

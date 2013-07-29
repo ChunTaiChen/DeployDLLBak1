@@ -1,0 +1,23 @@
+<Request>
+  <SCAttendExtension CourseID="11737" StudentID="57097">
+    <Extension Name="GradeBook">
+      <Exam ExamID="61">
+        <Item SubExamID="1" Score="100" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+  <SCAttendExtension CourseID="11737" StudentID="57097">
+    <Extension Name="GradeBook">
+      <Exam ExamID="61">
+        <Item SubExamID="2" Score="98" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+  <SCAttendExtension CourseID="11737" StudentID="57097">
+    <Extension Name="GradeBook">
+      <Exam ExamID="61">
+        <Item SubExamID="3" Score="92" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+</Request>

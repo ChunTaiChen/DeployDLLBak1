@@ -1,0 +1,9 @@
+﻿<Release Version="0.0.0.12">
+  <Files>
+    <File Name="KaoHsiungExamScore_JH.dll" Folder="" Size="829952" Digest="/mud51LMahq5ax8peOug/5oiGho=">
+      <AssemblyName>KaoHsiungExamScore_JH, Version=1.0.0.10, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.10</Version>
+    </File>
+    <File Name="KaoHsiungExamScore_JH.pdb" Folder="" Size="136704" Digest="aDgBAD345z9fbb04Rn9qDnHX7Pc=" />
+  </Files>
+</Release>

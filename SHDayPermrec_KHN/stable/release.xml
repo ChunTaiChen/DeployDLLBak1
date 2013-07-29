@@ -1,0 +1,29 @@
+﻿<Release Version="0.0.0.8">
+  <Files>
+    <File Name="OfficialStudentRecord.dll" Folder="" Size="137216" Digest="wgnUqWjRWRgKqG6QNhNNbntRGEQ=">
+      <AssemblyName>OfficialStudentRecord, Version=1.0.0.6, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.6</Version>
+    </File>
+    <File Name="OfficialStudentRecord.pdb" Folder="" Size="48640" Digest="u42IhcFzYLlYiw9hyKuH/dp7LGI=" />
+    <File Name="SHStudentCard.dll" Folder="" Size="119808" Digest="9MLmopL0/wRbtKX5WHb9B6LbmoA=">
+      <AssemblyName>SHStudentCard, Version=1.0.0.6, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.6</Version>
+    </File>
+    <File Name="SHStudentCard.pdb" Folder="" Size="36352" Digest="E0r5h8dL8G7+oE9nlyLTv1+KU/k=" />
+    <File Name="SmartSchool.GovernmentalDocument.HS.dll" Folder="" Size="524800" Digest="KrsMp+LPNiBXM6to4fAquKLD/e8=">
+      <AssemblyName>SmartSchool.GovernmentalDocument.HS, Version=1.0.4.5, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.4.5</Version>
+    </File>
+    <File Name="SmartSchool.GovernmentalDocument.HS.pdb" Folder="" Size="482816" Digest="B0u5vdR2iGpwKIRzHSpYdHNRIWs=" />
+    <File Name="UpdateRecordModule_KHSH_N.dll" Folder="" Size="1065984" Digest="b4hkc1SgSvAh4RKum7xKeBD3c7A=">
+      <AssemblyName>UpdateRecordModule_KHSH_N, Version=1.0.0.3, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.3</Version>
+    </File>
+    <File Name="UpdateRecordModule_KHSH_N.pdb" Folder="" Size="660992" Digest="sg9HDrxfS/bkGFP9SwYsRCvEBNY=" />
+    <File Name="UpdateRecordViewForm.dll" Folder="" Size="31232" Digest="GLQOZyporSAcN4dLzv7YaQoIbK8=">
+      <AssemblyName>UpdateRecordViewForm, Version=1.0.0.4, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.4</Version>
+    </File>
+    <File Name="UpdateRecordViewForm.pdb" Folder="" Size="46592" Digest="rSOhEFHH2kJl0ChmSunjP2TZkUU=" />
+  </Files>
+</Release>

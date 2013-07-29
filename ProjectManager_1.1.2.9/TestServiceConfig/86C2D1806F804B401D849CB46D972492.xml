@@ -1,0 +1,11 @@
+<Request>
+  <CourseExtension CourseID="11737">
+    <Extension Name="GradeItem">
+      <GradeItem>
+        <Item ExamID="61" SubExamId="1" Name="1" Weight="1" />
+        <Item ExamID="61" SubExamId="2" Name="2" Weight="1" />
+        <Item ExamID="61" SubExamId="3" Name="3" Weight="1" />
+      </GradeItem>
+    </Extension>
+  </CourseExtension>
+</Request>

@@ -1,0 +1,9 @@
+﻿<Release Version="0.0.0.0">
+  <Files>
+    <File Name="K12.Retake.dll" Folder="" Size="781312" Digest="nFStpibvXD9O6g1SR+8+hAt2r9U=">
+      <AssemblyName>K12.Retake, Version=1.0.0.75, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.75</Version>
+    </File>
+    <File Name="K12.Retake.pdb" Folder="" Size="587264" Digest="MbcUUdjR+j6gcW9r/ewJfggw5fc=" />
+  </Files>
+</Release>

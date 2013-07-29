@@ -1,0 +1,12 @@
+<Request>
+  <Field>
+    <All>
+    </All>
+  </Field>
+  <Condition>
+    <!--以下為非必要條件-->
+    <Id>
+    </Id>
+  </Condition>
+  <!--<Pagination><StartPage>1</StartPage><PageSize>0</PageSize></Pagination>-->
+</Request>

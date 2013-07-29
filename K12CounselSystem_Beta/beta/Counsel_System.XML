@@ -1,0 +1,4797 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Counsel_System</name>
+    </assembly>
+    <members>
+        <member name="T:Counsel_System.ImportExport.ImportStudentCaseMeetingRecord">
+            <summary>
+            匯入學生個案會議
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._ErrorMessageList">
+            <summary>
+            當有錯誤訊息
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global.CounselUserDefineDataRootName">
+            <summary>
+            設定 ConfigData 名稱
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global.CounselUserDefineDataName">
+            <summary>
+            設定 ConfigData 名稱
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._HasStudQuizDataDictTemp">
+            <summary>
+            學生測驗資料用的暫存
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._ImportStudQuizDataValElement">
+            <summary>
+            學生測驗資料XML
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._AllTeacherNameIdDictTemp">
+            <summary>
+            取得所有教師名稱對應用的暫存
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._AllStudentNumberStatusIDTemp">
+            <summary>
+            所有學生學號與狀態對應的暫存
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._StudentStatusDBDict">
+            <summary>
+            學生狀態資料庫內的對應
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._CounselUserDefSelectItemList">
+            <summary>
+            設定輔導自訂欄位畫面選項
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Global.StartDefaultValue">
+            <summary>
+            啟動預設值
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Counsel_System.Global.CounselXMLToDictP1(System.String)" -->
+        <member name="M:Counsel_System.Global.GetUserConfigData">
+            <summary>
+            取得系統內設定自訂欄位資料項目與型態
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Counsel_System.Global.CounselXMLToDictP1(System.Collections.Generic.Dictionary{System.String,System.String})" -->
+        <member name="F:Counsel_System.Global._ABCardTemplateTransfer">
+            <summary>
+            AB表樣板交換者
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._StudentSemesterHistoryItemDict">
+            <summary>
+            AB表存放學生學期歷程
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._ABCard_StudentTextScoreDict">
+            <summary>
+            AB表存放學生日常生活表現具體建議
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._ABCard_StudentGraduateDict">
+            <summary>
+            AB表存放學生畢業資訊
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._ABCard_StudentUpdateRecDict">
+            <summary>
+            AB表存放學生異動資料
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._ABCard_StudentMDRecordDict">
+            <summary>
+            AB表存放獎懲資料
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._ABCard_StudentSpecCourseDict">
+            <summary>
+            AB表存放學生社團
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._ABCard_StudentTheCadreDict">
+            <summary>
+            AB表存放學生擔任幹部
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._AB_StudSemsDomainScoreDict">
+            <summary>
+            AB表存放學生學期領域成績與畢業成績
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._AB_CaseMeetingRecordToABRptDataDict">
+            <summary>
+            AB 表存放輔導個案會議
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._AB_CareRecordToABRptDataDict">
+            <summary>
+            AB 表存放輔導優先關懷
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._AB_InterViewDataToABRptDataDict">
+            <summary>
+            AB 表存放輔導晤談紀錄
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._AB_StudentFreshmanDict">
+            <summary>
+            AB 表存放學生入學照片
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._AB_StudentGraduateDict">
+            <summary>
+            AB 表存放畢業照片
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Global._CareRecordItemManager">
+            <summary>
+            優先關懷項目管理
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.StudInterviewDataReportForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudInterviewDataReportForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudInterviewDataReportForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudInterviewDataReportForm.ParseUDTXML1(System.String)">
+            <summary>
+            解析 XML 內資料
+            </summary>
+            <param name="strData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Forms.StudInterviewDataReportForm.SetDefaultTemplate">
+            <summary>
+            設定預設樣版
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudCaseMeetingRecordForm.#ctor(Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef,Counsel_System.Forms.StudCaseMeetingRecordForm.accessType)">
+            <summary>
+            學生個案會議
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.StudCaseMeetingRecordForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudCaseMeetingRecordForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudCaseMeetingRecordForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.AB_SemsDomainScore">
+            <summary>
+            AB表學期領域成績
+            </summary>
+        </member>
+        <member name="F:Counsel_System.DAO.AB_SemsDomainScore.LangSubjDict">
+            <summary>
+            語文領域科目成績
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_SemsDomainScore.SchoolYear">
+            <summary>
+            學年度
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_SemsDomainScore.Semester">
+            <summary>
+            學期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_SemsDomainScore.GradeYear">
+            <summary>
+            年級
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_SemsDomainScore.DomainName">
+            <summary>
+            領域成績
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_SemsDomainScore.DomainScore">
+            <summary>
+            領域成績
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_SemsDomainScore.GroupName">
+            <summary>
+            領域群組(報表用)
+            </summary>
+        </member>
+        <member name="F:Counsel_System.CounselAdmin.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.CounselAdmin.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.CounselAdmin.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudCaseMeetingRecordContent.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudCaseMeetingRecordContent.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudCaseMeetingRecordContent.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Counsel_System.Contents.CounselStudentListContent">
+            <summary>
+            學生.輔導學生
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.CounselStudentListContent.btnSetCounselTeacherA_Click(System.Object,System.EventArgs)">
+            <summary>
+            認輔教師
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Counsel_System.Contents.CounselStudentListContent.btnSetCounselTeacherB_Click(System.Object,System.EventArgs)">
+            <summary>
+            輔導老師
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Counsel_System.Contents.CounselStudentListContent.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.CounselStudentListContent.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Contents.CounselStudentListContent.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Counsel_System.ValidationRule.RowValidator.StudCheckStudentNumberStatusVal">
+            <summary>
+            檢查學號在不同狀態下是否重複
+            </summary>
+        </member>
+        <member name="T:Counsel_System.PermissionCode">
+            <summary>
+            輔導相關共用權限代碼
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Counsel_System.Parser.AnswerItem" -->
+        <!-- Badly formed XML comment ignored for member "M:Counsel_System.Parser.AnswerItem.SetValueName(System.String)" -->
+        <member name="M:Counsel_System.Parser.AnswerItem.GetValueName">
+            <summary>
+            for checkbox only
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Counsel_System.Parser.AnswerItem.SetValueRemark(System.String)" -->
+        <member name="M:Counsel_System.Parser.AnswerItem.GetValueRemark">
+            <summary>
+            for checkbox only
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Parser.AnswerItem.GetValue(System.String)">
+            <summary>
+            取得一個 AnswerItem 裡某一項屬性的值，是給 Grid 傳入欄位名稱取得某一值用的
+            </summary>
+            <param name="attName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Parser.AnswerItem.GetContents">
+            <summary>
+            取得 grid 的值專用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Parser.AnswerItem.SetContent(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            設定 grid 的值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Counsel_System.Forms.StudQuizDataForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudQuizDataForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudQuizDataForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.CounselTeacherRecord">
+            <summary>
+            輔導系統老師
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.CounselTeacherRecord.TeacherFullName">
+            <summary>
+            老師完整名稱TeacherName(NickName)
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.CounselTeacherRecord.TeacherTag_ID">
+            <summary>
+            TeacherTagID(資料庫存取)
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.CounselTeacherRecord.TeacherID">
+            <summary>
+            教師編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.CounselTeacherRecord.counselTeacherType">
+            <summary>
+            輔導系統老師類別
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.UDTSiblingDef">
+            <summary>
+            輔導-兄弟姊妹資訊
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSiblingDef.StudentID">
+            <summary>
+             學生編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSiblingDef.Title">
+            <summary>
+             稱謂
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSiblingDef.Name">
+            <summary>
+             姓名
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSiblingDef.SchoolName">
+            <summary>
+             畢肆業學校
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSiblingDef.BirthYear">
+            <summary>
+             出生年次
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSiblingDef.Remark">
+            <summary>
+             備註
+            </summary>
+        </member>
+        <member name="F:Counsel_System.QGPanel.components">
+            <summary>
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:Counsel_System.QGPanel.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:Counsel_System.QGPanel.InitializeComponent">
+            <summary>
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="T:Counsel_System.UI.QGUIMaker">
+            <summary>
+            This is a decoration class which will Render one QuestionGroup UI，
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Counsel_System.UI.QGUIMaker.SetAnswer(System.Xml.XmlElement)" -->
+        <member name="M:Counsel_System.Forms.StudABCard_YearlyForm_Text.GetData">
+            <summary>
+            取得資料
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Counsel_System.Forms.StudABCard_YearlyForm_Text.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard_YearlyForm_Text.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard_YearlyForm_Text.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard_YearlyForm_Combo.SetFormTitle(System.String)">
+            <summary>
+            設標題
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard_YearlyForm_Combo.SetSelectItems(System.Collections.Generic.List{System.String})">
+            <summary>
+            設一年級選項
+            </summary>
+            <param name="items"></param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard_YearlyForm_Combo.GetData">
+            <summary>
+            取得目前資料
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Counsel_System.Forms.StudABCard_YearlyForm_Combo.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard_YearlyForm_Combo.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard_YearlyForm_Combo.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.SetABTemplateXMLForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.SetABTemplateXMLForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.SetABTemplateXMLForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.SetABCardAccessStartingDate.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.SetABCardAccessStartingDate.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.SetABCardAccessStartingDate.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.UDTSingleRecordDef">
+            <summary>
+            輔導-單一記錄
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSingleRecordDef.StudentID">
+            <summary>
+             學生編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSingleRecordDef.Key">
+            <summary>
+             識別值
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSingleRecordDef.Data">
+            <summary>
+             資料
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSingleRecordDef.Remark">
+            <summary>
+             備註
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.UDTRelativeDef">
+            <summary>
+            輔導-親屬資訊
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTRelativeDef.StudentID">
+            <summary>
+             學生編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTRelativeDef.Title">
+            <summary>
+             稱謂
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTRelativeDef.Name">
+            <summary>
+             姓名
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTRelativeDef.IsAlive">
+            <summary>
+             存歿
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTRelativeDef.BirthYear">
+            <summary>
+             出生年
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTRelativeDef.Job">
+            <summary>
+             職業
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTRelativeDef.Institute">
+            <summary>
+             工作機構
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTRelativeDef.JobTitle">
+            <summary>
+             職稱
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTRelativeDef.EduDegree">
+            <summary>
+             教育程度
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTRelativeDef.Phone">
+            <summary>
+            電話
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.AB_StudSemsDomainScore">
+            <summary>
+            學生學期領域成績
+            </summary>
+        </member>
+        <member name="F:Counsel_System.DAO.AB_StudSemsDomainScore.DomainNameDict">
+            <summary>
+            領域名稱對照(報表用)
+            </summary>
+        </member>
+        <member name="F:Counsel_System.DAO.AB_StudSemsDomainScore.GradeYearList">
+            <summary>
+            年級學期索引 (報表用)
+            </summary>
+        </member>
+        <member name="F:Counsel_System.DAO.AB_StudSemsDomainScore.SemsDomainScoreList">
+            <summary>
+            學期領域成績
+            </summary>
+        </member>
+        <member name="F:Counsel_System.DAO.AB_StudSemsDomainScore.GraduateScoreDict">
+            <summary>
+            領域畢業成績
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_StudSemsDomainScore.StudentID">
+            <summary>
+            學生系統編號
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.ABRptMergeBaseData">
+            <summary>
+            綜合紀錄表基本資料
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.ABRptMergeBaseData.Key">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.ABRptMergeBaseData.RptMergeType">
+            <summary>
+            合併型態
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.ABRptMergeBaseData.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard09Content.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard09Content.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard09Content.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard09Content._ClassGradeYearDict">
+            <summary>
+            年級索引(班級)
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard09Content._RowIndexDict">
+            <summary>
+            資料存取對照用 Index
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard09Content._RowNameList">
+            <summary>
+            資料存取對照用 Index
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard09Content._ColumIndexDict">
+            <summary>
+            資料存取對照用 Index
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard09Content._BGRun">
+            <summary>
+            呼叫重新讀取資料
+            </summary>
+        </member>
+        <member name="T:Counsel_System.UI.SubjectUIMaker">
+            <summary>
+            Render 整個 大題的 UI
+            </summary>
+        </member>
+        <member name="T:Counsel_System.ImportExport.ImportStudentInterViewData">
+            <summary>
+            匯入晤談紀錄
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.UDT_CounselStudent_ListDef">
+            <summary>
+            輔導學生與教師
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudent_ListDef.TeacherTagID">
+            <summary>
+             教師清單編號，對應到 counsel.teacher_list.uid
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudent_ListDef.StudentID">
+            <summary>
+             學生編號，對應到 student.id
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudent_ListDef.AuthorID">
+            <summary>
+            記錄人的登入帳號
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef">
+            <summary>
+            晤談紀錄
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.InterviewNo">
+            <summary>
+             晤談編號(使用者自行輸入)
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.StudentID">
+            <summary>
+            學生編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.isPublic">
+            <summary>
+            是否公開
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.TeacherID">
+            <summary>
+            晤談老師編號(與TeacherID關聯)
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.InterviewType">
+            <summary>
+            晤談方式
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.IntervieweeType">
+            <summary>
+            晤談對象
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.InterviewDate">
+            <summary>
+            晤談日期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.InterviewTime">
+            <summary>
+            晤談時間
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.Place">
+            <summary>
+            地點
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.Cause">
+            <summary>
+            事由
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.Attendees">
+            <summary>
+            存放參與人員(XML)
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.CounselType">
+            <summary>
+            存放輔導方式(XML)
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.CounselTypeKind">
+            <summary>
+            存放輔導歸類(XML)
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.ContentDigest">
+            <summary>
+            內容要點
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.AuthorID">
+            <summary>
+            記錄人的登入帳號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.AuthorName">
+            <summary>
+            記錄人的姓名
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef.StudentStatus">
+            <summary>
+            學生狀態(不存入UDT)
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudCareRecordContent.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudCareRecordContent.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudCareRecordContent.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard06Content.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard06Content.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard06Content.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard06Content.SetDefaultControlName">
+            <summary>
+            設定控制項初始名稱
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard06Content._BGRun">
+            <summary>
+            呼叫重新讀取資料
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard06Content.SetControlEnable(System.Boolean)">
+            <summary>
+            設定控制項是否啟用
+            </summary>
+            <param name="tf"></param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard05Content.SetDefaultControlName">
+            <summary>
+            設定控制項初始名稱
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard05Content.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard05Content.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard05Content.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard03Content.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard03Content.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard03Content.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Counsel_System.Contents.StudABCard03Content._ClassGradeYearDict" -->
+        <member name="F:Counsel_System.Contents.StudABCard03Content._RowIndexDict">
+            <summary>
+            資料存取對照用 Index
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard03Content._RowNameList">
+            <summary>
+            資料存取對照用 Index
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard03Content._ColumIndexDict">
+            <summary>
+            資料存取對照用 Index
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Counsel_System.Contents.StudABCard03Content.SetDgColumn4_6Visable(System.Boolean)" -->
+        <member name="F:Counsel_System.Contents.StudABCard02Content._ClassGradeYearDict">
+            <summary>
+            年級索引(班級)
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard02Content._RowIndexDict">
+            <summary>
+            資料存取對照用 Index
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard02Content._RowNameList">
+            <summary>
+            資料存取對照用 Index
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard02Content._ColumIndexDict">
+            <summary>
+            資料存取對照用 Index
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard02Content.LoadGuardian">
+            <summary>
+            載入監護人資料至畫面
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard02Content.SaveGuardianData">
+            <summary>
+            儲存監護人
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard02Content.SaveRelativeData">
+            <summary>
+            儲存直系血親
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard02Content.SaveSiblingData">
+            <summary>
+            儲存兄弟姊妹
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard02Content.SaveYearlyData">
+            <summary>
+            儲存其它資料
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard02Content.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard02Content.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard02Content.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Counsel_System.ImportExport.ImportStudentUserDefData">
+            <summary>
+            匯入輔導使用者自訂欄位
+            </summary>
+        </member>
+        <member name="T:Counsel_System.Forms.StudInterviewDataReport1Form">
+            <summary>
+            晤談紀錄簽認表
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.StudInterviewDataReport1Form._InterviewRecordDict">
+            <summary>
+            教師晤談紀錄
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudInterviewDataReport1Form.SetDefaultTemplate">
+            <summary>
+            設定預設值
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.StudInterviewDataReport1Form.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudInterviewDataReport1Form.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudInterviewDataReport1Form.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudCareRecordAddItemForm.GetAddItemName">
+            <summary>
+            取得新增項目名稱
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Counsel_System.Forms.StudCareRecordAddItemForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudCareRecordAddItemForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudCareRecordAddItemForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.ImportStudQuizDataSelectQuizNameForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.ImportStudQuizDataSelectQuizNameForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.ImportStudQuizDataSelectQuizNameForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselUserDefDataDef.FieldName">
+            <summary>
+            欄位名稱
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselUserDefDataDef.DataType">
+            <summary>
+            資料型態
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselUserDefDataDef.Value">
+            <summary>
+            資料值
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselUserDefDataDef.StudentID">
+            <summary>
+            學生ID
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselUserDefDataDef.StudentStatus">
+            <summary>
+            學生狀態(不存入UDT)
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.LogTransfer">
+            <summary>
+            Log記錄轉換者
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.LogTransfer.GetBatchInsertLog">
+            <summary>
+            取得大批新增log
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.LogTransfer.GetBatchUpdateLog">
+            <summary>
+            取得大批更新 log
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.LogTransfer.GetBatchDeleteLog">
+            <summary>
+            取得大批刪除 log
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.LogTransfer.AddBatchInsertLog(System.String,System.String,System.String,System.String)">
+            <summary>
+            新增時studentid,uid,fieldname,value
+            </summary>
+            <param name="key1"></param>
+            <param name="key2"></param>
+            <param name="FieldName"></param>
+            <param name="Value"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.LogTransfer.ClearBatchLog">
+            <summary>
+            清除批次catch
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.LogTransfer.SetLogValue(System.String,System.String)">
+            <summary>
+            設定Log值
+            </summary>
+            <param name="Name"></param>
+            <param name="Value"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.LogTransfer.getLogValueList">
+            <summary>
+            取得LogValueList
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.LogTransfer.Clear">
+            <summary>
+            請除LogValueList值
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.LogTransfer.SaveChangeLog(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            改變Log
+            </summary>
+            <param name="ActionBy"></param>
+            <param name="Action"></param>
+            <param name="BeforeString"></param>
+            <param name="AfterString"></param>
+            <param name="LogValueList"></param>
+            <param name="targetCategory"></param>
+            <param name="targetID"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.LogTransfer.SaveInsertLog(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            新增 Log
+            </summary>
+            <param name="ActionBy"></param>
+            <param name="Action"></param>
+            <param name="BeforeString"></param>
+            <param name="AfterString"></param>
+            <param name="LogValueList"></param>
+            <param name="targetCategory"></param>
+            <param name="targetID"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.LogTransfer.SaveDeleteLog(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            刪除Log
+            </summary>
+            <param name="ActionBy"></param>
+            <param name="Action"></param>
+            <param name="BeforeString"></param>
+            <param name="AfterString"></param>
+            <param name="LogValueList"></param>
+            <param name="targetCategory"></param>
+            <param name="targetID"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.LogTransfer.SaveLog(System.String,System.String,System.String,System.String,System.Text.StringBuilder)">
+            <summary>
+            單筆儲存
+            </summary>
+            <param name="ActionBy"></param>
+            <param name="Action"></param>
+            <param name="targetCategory"></param>
+            <param name="targetID"></param>
+            <param name="LogData"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.LogTransfer.GetDiffentLogValueList">
+            <summary>
+            取得差異 log
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Counsel_System.DAO.SchoolYearSemester.SchoolYear">
+            <summary>
+            學年度
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.SchoolYearSemester.Semester">
+            <summary>
+            學期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.SchoolYearSemester.GradeYear">
+            <summary>
+            年級
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.QuestionGroupConfig">
+            <summary>
+            綜合表現樣板 Question 使用(問題群組)
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.QuestionGroupConfig.SetQuestionGroupLabel(System.String)">
+            <summary>
+            設定問題群組標籤
+            </summary>
+            <param name="label"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.QuestionGroupConfig.AddChoice(System.String,System.Boolean)">
+            <summary>
+            Add Question Group Choices
+            </summary>
+            <param name="label"></param>
+            <param name="selected"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.QuestionGroupConfig.GetChoiceXml">
+            <summary>
+            Get Question Group Choices XElement
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.QuestionGroupConfig.AddQuestionSelect(Counsel_System.DAO.QuestionGroupConfig.QuestionType,System.String,System.String,System.String,System.Int32,System.Xml.Linq.XElement,System.Xml.Linq.XElement)">
+            <summary>
+            新增選擇問題
+            </summary>
+            <param name="Qtype"></param>
+            <param name="name"></param>
+            <param name="label"></param>
+            <param name="width"></param>
+            <param name="rows"></param>
+            <param name="GridColXml"></param>
+            <param name="GridDefaultXml"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.QuestionGroupConfig.GetQuestionSelectXml">
+            <summary>
+            取得所有問題
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Counsel_System.DAO.QuestionGroupConfig.QuestionType">
+             <summary>
+            Question Type
+             </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard08Content._BGRun">
+            <summary>
+            呼叫重新讀取資料
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard08Content.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard08Content.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard08Content.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Counsel_System.Parser.Answers" -->
+        <member name="M:Counsel_System.Parser.Answers.GetAnswer(System.String)">
+            <summary>
+            取得某一題號的答案
+            </summary>
+            <param name="qName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Parser.Answers.GetAllAnswers">
+            <summary>
+            取得此 Subject 的所有題目的答案
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Counsel_System.Forms.StudABCard_YearlyForm_TextDropDown.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard_YearlyForm_TextDropDown.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard_YearlyForm_TextDropDown.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard_PriorityForm_Combo.GetData">
+            <summary>
+            取得資料
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard_PriorityForm_Combo.SetTitleName(System.String)">
+            <summary>
+            設定標頭名稱
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="F:Counsel_System.Forms.StudABCard_PriorityForm_Combo.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard_PriorityForm_Combo.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard_PriorityForm_Combo.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.StudABCardReportForm_ErrorMsg.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCardReportForm_ErrorMsg.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCardReportForm_ErrorMsg.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.SetUserDefineDataForm.GetDataToForm">
+            <summary>
+            取得設定資料顯示到畫面
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Forms.SetUserDefineDataForm.SetDataFromForm">
+            <summary>
+            儲存畫面上設定資料
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="F:Counsel_System.Forms.SetUserDefineDataForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.SetUserDefineDataForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.SetUserDefineDataForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.SetCounselTeacherForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.SetCounselTeacherForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.SetCounselTeacherForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.QuestionPKey">
+            <summary>
+            題組Key 組合
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.QuestionPKey.GetPKey">
+            <summary>
+            取得 key 組
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.QuestionPKey.GetField">
+            <summary>
+            取得欄位(SubjectLabel+QGLabel+QLabel
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.QuestionPKey.GetFieldG">
+            <summary>
+            取得欄位(SubjectLabel+QGLabel
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Counsel_System.DAO.QuestionPKey.SubjectLabel">
+            <summary>
+            題組名稱
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.QuestionPKey.QGLabel">
+            <summary>
+            群組名稱
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.QuestionPKey.QLabel">
+            <summary>
+            問題名稱
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.QuestionPKey.TemplateID">
+            <summary>
+            樣版ID
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.QuestionPKey.QType">
+            <summary>
+            問題類型
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.QuestionPKey.Q_Name">
+            <summary>
+            問題系統內 Key,不能重複值
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.QuestionPKey.Q_Choice">
+            <summary>
+            題目選項，用;分隔
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.QuestionPKey.dataElement">
+            <summary>
+            問題結構
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.ABCardQuestionDataManager">
+            <summary>
+            綜合表現題目管理
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardQuestionDataManager.GetAllQuestionData">
+            <summary>
+            取得所有題目
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardQuestionDataManager.GetQuestionDataByGroupName(System.String)">
+            <summary>
+            依群組名稱取的資料
+            </summary>
+            <param name="Name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Counsel_System.Contents.CounselStudentListAContent">
+            <summary>
+            教師.認輔教師
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.CounselStudentListAContent.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.CounselStudentListAContent.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Contents.CounselStudentListAContent.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Counsel_System.UI.QuestionGroupUIDefinition.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:Counsel_System.UI.QuestionGroupUIDefinition.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:Counsel_System.UI.QuestionGroupUIDefinition.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="F:Counsel_System.ImportExport.ExportStudentV2.components">
+            <summary>
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:Counsel_System.ImportExport.ExportStudentV2.Dispose(System.Boolean)">
+            <summary>
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該公開 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:Counsel_System.ImportExport.ExportStudentV2.InitializeComponent">
+             <summary>
+             此為設計工具支援所需的方法 - 請勿使用程式碼編輯器修改這個方法的內容。
+            
+             </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.StudInterviewDataForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudInterviewDataForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudInterviewDataForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.StudInterviewDataForm._StudInterviewRecord">
+            <summary>
+            晤談紀錄
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudInterviewDataForm.SaveData">
+            <summary>
+            寫入資料
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.StudABCard_YearlyForm_03.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard_YearlyForm_03.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard_YearlyForm_03.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef">
+            <summary>
+            輔導-個案會議
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef.StudentID">
+            <summary>
+             學生編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef.CaseNo">
+            <summary>
+             個案編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef.CounselTeacherID">
+            <summary>
+             晤談老師
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef.MeetingDate">
+            <summary>
+             會議日期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef.MeetigTime">
+            <summary>
+             會議時間
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef.Place">
+            <summary>
+             晤談地點
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef.Attendees">
+            <summary>
+             參與人員 , xml
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef.MeetingCause">
+            <summary>
+             會議事由
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef.CounselType">
+            <summary>
+             輔導方式 , xml
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef.CounselTypeKind">
+            <summary>
+             輔導歸類 , xml
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef.ContentDigest">
+            <summary>
+             內容要點
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef.AuthorID">
+            <summary>
+            記錄人的登入帳號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef.AuthorName">
+            <summary>
+            記錄人的姓名
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef.StudentStatus">
+            <summary>
+            學生狀態(不存入UDT)
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.UDTSemesterDataDef">
+            <summary>
+            輔導-每學期資料
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSemesterDataDef.StudentID">
+            <summary>
+             學生編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSemesterDataDef.Key">
+            <summary>
+             識別值
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSemesterDataDef.S1a">
+            <summary>
+             1年級上學期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSemesterDataDef.S1b">
+            <summary>
+             1年級下學期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSemesterDataDef.S2a">
+            <summary>
+             2年級上學期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSemesterDataDef.S2b">
+            <summary>
+             2年級下學期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSemesterDataDef.S3a">
+            <summary>
+             3年級上學期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSemesterDataDef.S3b">
+            <summary>
+             3年級下學期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSemesterDataDef.S4a">
+            <summary>
+             4年級上學期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSemesterDataDef.S4b">
+            <summary>
+             4年級下學期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSemesterDataDef.S5a">
+            <summary>
+             5年級上學期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSemesterDataDef.S5b">
+            <summary>
+             5年級下學期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSemesterDataDef.S6a">
+            <summary>
+             6年級上學期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTSemesterDataDef.S6b">
+            <summary>
+             6年級下學期
+            </summary>
+        </member>
+        <member name="T:Counsel_System.Contents.BasicInfo">
+            <summary>
+            學生.AB表
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.BasicInfo.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.BasicInfo.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:Counsel_System.Contents.BasicInfo.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.BasicInfo.loadABCardData">
+            <summary>
+            載入某位學生的 AB 卡資料
+            </summary>
+        </member>
+        <member name="T:Counsel_System.ImportExport.ImportStudentCareRecord">
+            <summary>
+            匯入優先關懷
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.AddQuizNameForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.AddQuizNameForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.AddQuizNameForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.AddQuizNameForm.GetAddQuizName">
+            <summary>
+            取得新增測驗名稱
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Counsel_System.DAO.UDT_QuizDef">
+            <summary>
+            測驗資料
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_QuizDef.QuizName">
+            <summary>
+            測驗名稱
+            </summary>        
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_QuizDef.QuizDataField">
+            <summary>
+            測驗資料欄位(XML)
+            </summary>        
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_QuizDef.AuthorID">
+            <summary>
+            記錄人的登入帳號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudSortEntity.ClassName">
+            <summary>
+            班級
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudSortEntity.SeatNo">
+            <summary>
+            座號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudSortEntity.StudentNumber">
+            <summary>
+            學號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudSortEntity.Status">
+            <summary>
+            狀態
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.UDTYearlyDataDef">
+            <summary>
+            輔導-每年資料
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTYearlyDataDef.StudentID">
+            <summary>
+             學生編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTYearlyDataDef.Key">
+            <summary>
+             識別值
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTYearlyDataDef.G1">
+            <summary>
+             1年級
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTYearlyDataDef.G2">
+            <summary>
+             2年級
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTYearlyDataDef.G3">
+            <summary>
+             3年級
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTYearlyDataDef.G4">
+            <summary>
+             4年級
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTYearlyDataDef.G5">
+            <summary>
+             5年級
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTYearlyDataDef.G6">
+            <summary>
+             6年級
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.StudentInfo">
+            <summary>
+            學生資訊
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.StudentID">
+            <summary>
+            學生編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.StudentNumber">
+            <summary>
+            學號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.IDNumber">
+            <summary>
+            身分證號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.BeforeEnrollSchoolYear">
+            <summary>
+            入學年
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.BeforeEnrollSchoolName">
+            <summary>
+            入學學校名稱
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.GraduationYearMonth">
+            <summary>
+            畢業年月
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.Birthplace">
+            <summary>
+            出生地
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.Birthday">
+            <summary>
+            出生日期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.BirthdayTW">
+            <summary>
+            出生日期(民國)
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.PermanentAddress">
+            <summary>
+            戶籍地址
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.PermanentPhone">
+            <summary>
+            戶籍電話
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.MailingAddress">
+            <summary>
+            聯絡地址
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.MailingPhone">
+            <summary>
+            聯絡電話
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.UpdateRecordList">
+            <summary>
+            異動紀錄字串組
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.AttendanceDict">
+            <summary>
+            缺曠紀錄 Dictionary 年級+學期,string
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.MeritDict">
+            <summary>
+            獎懲紀錄 Dictionary 年級+學期,string
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.SchoolName">
+            <summary>
+            學校名稱
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.StudentInfo.Gender">
+            <summary>
+            性別
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.Rpt_InterviewRecord">
+            <summary>
+            輔導晤談紀錄報表使用
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.Rpt_InterviewRecord.ClassName">
+            <summary>
+            班級
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.Rpt_InterviewRecord.SeatNo">
+            <summary>
+            座號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.Rpt_InterviewRecord.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.Rpt_InterviewRecord.TeacherName">
+            <summary>
+            教師姓名
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.Rpt_InterviewRecord.interview_type">
+            <summary>
+            晤談方式
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.Rpt_InterviewRecord.interviewee_type">
+            <summary>
+            晤談對象
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.Rpt_InterviewRecord.interview_date">
+            <summary>
+            晤談日期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.Rpt_InterviewRecord.content_digest">
+            <summary>
+            內容要點
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.DocTemplateTransfer">
+            <summary>
+            Word 樣板交換
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.DocTemplateTransfer.SetDefaultTemplate">
+            <summary>
+            設定用預設樣版
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.DocTemplateTransfer.UploadTemplate">
+            <summary>
+            上傳樣板
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.DocTemplateTransfer.GetUsingTemplate">
+            <summary>
+            取得目前的樣板 MemoryStream 型態
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.DocTemplateTransfer.RemoveAndUseDefaultTemplate">
+            <summary>
+            移除樣板並使用預設
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.DocTemplateTransfer.DownloadTemplate">
+            <summary>
+            下載目前樣版
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.AB_RptCounselData">
+            <summary>
+            AB 表用存儲輔導資料
+            </summary>
+        </member>
+        <member name="F:Counsel_System.DAO.AB_RptCounselData.DataDict">
+            <summary>
+            對應資料
+            </summary>
+        </member>
+        <member name="F:Counsel_System.DAO.AB_RptCounselData.OtherDataList">
+            <summary>
+            其它資料
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_RptCounselData.StudentID">
+            <summary>
+            學生系統編號
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.ABCard_StudentTextScore">
+            <summary>
+            AB 表學生日常生活表現(導師評語)
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.ABCard_StudentTextScore.SchoolYear">
+            <summary>
+            學年度
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.ABCard_StudentTextScore.Semester">
+            <summary>
+            學期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.ABCard_StudentTextScore.GradeYear">
+            <summary>
+            年級
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.ABCard_StudentTextScore.StudentID">
+            <summary>
+            學生系統編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.ABCard_StudentTextScore.sb_Comment">
+            <summary>
+            高中(導師評語)
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.ABCard_StudentTextScore.DailyLifeRecommend">
+            <summary>
+            綜合評語(日常生活表現具體建議)
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.ABCardPrintManager">
+            <summary>
+            綜合表現紀錄表管理者
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardPrintManager.GetMappingField">
+            <summary>
+            取得題目合併欄位
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardPrintManager.GetAnswers(System.Collections.Generic.List{System.String})">
+            <summary>
+            取得答案
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardPrintManager.GetStudentABCardAnswerDict(System.Collections.Generic.List{System.String})">
+            <summary>
+            取得學生綜合表現答案
+            </summary>
+            <param name="StudentIDList"></param>
+        </member>
+        <member name="M:Counsel_System.Contents.CounselUserDefineDataItem.DataBindToDataGridView">
+            <summary>
+            將讀取資料填入DataGridView
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.CounselUserDefineDataItem.OnSaveButtonClick(System.EventArgs)">
+            <summary>
+            按下儲存
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Counsel_System.Contents.CounselUserDefineDataItem.OnPrimaryKeyChanged(System.EventArgs)">
+            <summary>
+            更換學生
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Counsel_System.Contents.CounselUserDefineDataItem.OnCancelButtonClick(System.EventArgs)">
+            <summary>
+            按下取消
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="F:Counsel_System.Contents.CounselUserDefineDataItem.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.CounselUserDefineDataItem.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:Counsel_System.Contents.CounselUserDefineDataItem.InitializeComponent">
+             <summary> 
+             此為設計工具支援所需的方法 - 請勿使用程式碼編輯器修改這個方法的內容。
+            
+             </summary>
+        </member>
+        <member name="T:Counsel_System.Parser.Question">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Parser.Question.#ctor(System.String,System.Collections.Generic.List{Counsel_System.Parser.QuestionListItem},System.Xml.XmlElement)">
+            			    <Question type="checkedlistbox" label="血型" />
+                     * 
+        </member>
+        <member name="T:Counsel_System.Parser.Answer">
+            <summary>
+            代表一個題目的答案。
+            </summary>    
+        </member>
+        <member name="F:Counsel_System.Parser.Answer.qname">
+                 * <Ans name="AAA12345677" value="61"></Ans>
+            	    <Ans name="AAA12345678" >
+            		    <Item value="近視" />
+            		    <Item value="其它" remark="蛀牙" />
+            	    </Ans>
+                 * 
+        </member>
+        <member name="M:Counsel_System.Parser.Answer.SetValue(System.String)">
+            <summary>
+            設定單選題的答案
+            </summary>
+            <param name="qvalue"></param>
+        </member>
+        <member name="M:Counsel_System.Parser.Answer.GetValue">
+            <summary>
+            取得單選題的答案
+            </summary>
+            <param name="qvalue"></param>
+        </member>
+        <member name="M:Counsel_System.Parser.Answer.SetAnswerItems(System.Collections.Generic.List{Counsel_System.Parser.AnswerItem})">
+            <summary>
+            設定複選題答案，適用 checkedlistbox 及 grid
+            </summary>
+            <param name="answerItems"></param>
+        </member>
+        <member name="M:Counsel_System.Parser.Answer.GetAnswerItems">
+            <summary>
+            取得複選題答案，適用 checkedlistbox 及 grid
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Counsel_System.DAO.AB_StudText">
+            <summary>
+            AB表用文字
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_StudText.StudentID">
+            <summary>
+            學生系統編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_StudText.SchoolYear">
+            <summary>
+            學年度
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_StudText.Semester">
+            <summary>
+            學期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_StudText.GradeYear">
+            <summary>
+            年級
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_StudText.Text1">
+            <summary>
+            文字
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard01Content._udtSrFlp01">
+            <summary>
+            本人概況_血型
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard01Content._udtSrFlp02">
+            <summary>
+            本人概況_宗教
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard01Content._udtSdDg01">
+            <summary>
+            本人概況_身高
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard01Content._udtSdDg02">
+            <summary>
+            本人概況_體重
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard01Content._udtMrFlp01Dict">
+            <summary>
+            本人概況_生理缺陷
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard01Content._udtMrFlp02Dict">
+            <summary>
+            本人概況_曾患特殊疾病
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard01Content._Dg01RowIdx">
+            <summary>
+            身高
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard01Content._Dg02RowIdx">
+            <summary>
+            體重
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard01Content.SetControlsDefault">
+            <summary>
+            設定控制項初始值
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard01Content.BindAnswerDataToUI">
+            <summary>
+            將答案填入畫面
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard01Content.LoadAnswerData">
+            <summary>
+            載入答案
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard01Content.LoadQuestionToUI">
+            <summary>
+            將題目載入
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard01Content.SetDgColumn4_6Visable(System.Boolean)">
+            <summary>
+            設定DG四~六年級是否顯示
+            </summary>
+            <param name="bol"></param>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard01Content.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard01Content.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard01Content.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Counsel_System.Contents.StudABCard01Content.enumKey">
+            <summary>
+            題目key
+            </summary>
+        </member>
+        <member name="T:Counsel_System.ValidationRule.RowValidator.StudCheckClassSeatNoStatusVal">
+            <summary>
+            檢查班級座號在同一狀態是否重複
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCardReportForm.ChechMapFieldName(System.String,System.Int32)">
+            <summary>
+            檢查合併資料是否有合併欄位
+            </summary>
+            <param name="name"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCardReportForm.SetDefaultTemplate">
+            <summary>
+            設定預設樣版
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCardReportForm.AddTableSColumn">
+            <summary>
+            新增 Data Table 內單筆欄位
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCardReportForm.DownloadDefaultTemplate">
+            <summary>
+            下載預設樣板
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCardReportForm.DownloadUserDefTemplate">
+            <summary>
+            下載使用者自訂範本
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCardReportForm.UploadUserDefTemplate">
+            <summary>
+            上傳使用者自定範本
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.StudABCardReportForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCardReportForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCardReportForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Counsel_System.Forms.SetABCardTemplateForm">
+            <summary>
+            設定綜合表現樣版
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.SetABCardTemplateForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.SetABCardTemplateForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.SetABCardTemplateForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.SetABCardTemplateForm._LogTransfer">
+            <summary>
+            Log 處理
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.SetABCardTemplateForm._ABCardTemplateTransfer">
+            <summary>
+            樣板交換處理
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.EnumQuestionType">
+            <summary>
+            綜合表現記錄問題類型
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.EnumControlType">
+            <summary>
+            綜合表現紀錄表控制項類型
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.AB_StudDateString">
+            <summary>
+            AB表使用處理學生日期與字串樣式
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_StudDateString.StudentID">
+            <summary>
+            學生系統編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_StudDateString.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_StudDateString.Text1">
+            <summary>
+            文字1
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_StudDateString.Text2">
+            <summary>
+            文字2
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.AB_RptColIdx">
+            <summary>
+            AB表欄位索引使用
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_RptColIdx.SchoolYear">
+            <summary>
+            學年度
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_RptColIdx.Semester">
+            <summary>
+            學期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_RptColIdx.GradeYear">
+            <summary>
+            年級
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AB_RptColIdx.Order">
+            <summary>
+            順序
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard07Content.LoadQuestionToUI">
+            <summary>
+            載入題目至畫面
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard07Content._ChangeListener_StatusChanged(System.Object,Campus.Windows.ChangeEventArgs)">
+            <summary>
+            當資料狀態有改變
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard07Content.LoadData">
+            <summary>
+            載入資料至控制項
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard07Content.BindAnswerDataToUI">
+            <summary>
+            將答案填入畫面
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard07Content.SetControlsDefault">
+            <summary>
+            控制項初始化
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard07Content.SetData">
+            <summary>
+            設定儲存資料
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard07Content.OnPrimaryKeyChanged(System.EventArgs)">
+            <summary>
+            切換學生
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard07Content.OnSaveButtonClick(System.EventArgs)">
+            <summary>
+            按儲存按鈕
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard07Content.OnCancelButtonClick(System.EventArgs)">
+            <summary>
+            按取消按鈕
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard07Content._BGRunM">
+            <summary>
+            重新背景讀取資料
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard07Content.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard07Content.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard07Content.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard04Content.setTabIndex">
+            <summary>
+            設定 Control Tab Index
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard04Content.SetControlTag">
+            <summary>
+            設定 txt 控制項對應 tag
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard04Content.LoadData">
+            <summary>
+            載入資料
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard04Content.ClearTxt">
+            <summary>
+             將 txt 內容設成空白
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudABCard04Content.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard04Content.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudABCard04Content.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Counsel_System.Contents.CounselStudentListBContent">
+            <summary>
+            教師.輔導教師
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.CounselStudentListBContent.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.CounselStudentListBContent.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Contents.CounselStudentListBContent.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Counsel_System.UI.QuestionUIDefinition.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:Counsel_System.UI.QuestionUIDefinition.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:Counsel_System.UI.QuestionUIDefinition.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="T:Counsel_System.Program">
+            <summary>
+            輔導
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.StudABCard02_RelativeForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard02_RelativeForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard02_RelativeForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Utility.ConvertStringToXelm1(System.String)">
+            <summary>
+            將字串轉成XElement
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.ConvertXmlListToString1(System.Collections.Generic.List{System.Xml.Linq.XElement})">
+            <summary>
+            將 XElementList轉成 String
+            </summary>
+            <param name="xmlList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetAuthorID">
+            <summary>
+            取得登入帳號
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetTeacherIDNameDict">
+            <summary>
+            取得非刪除教師名稱,TeacherID,TeacherName
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetCounselTeacherIDNameDict(System.String)">
+            <summary>
+            取得輔導相關老師名稱,TeacherID,TeacherName
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetCounselTeacherNameIDDict(System.String)">
+            <summary>
+            取得輔導相關老師名稱,TeacherName,TeacherID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.ShowCannotSaveMessage">
+            <summary>
+            顯示必填欄位未填無法儲存訊息
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Utility.ShowSavedMessage">
+            <summary>
+            顯示儲存完成訊息
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Utility.GetCounselTeacherByType(Counsel_System.DAO.CounselTeacherRecord.CounselTeacherType)">
+            <summary>
+            透過輔導系統老師類別取得老師
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetAllCounselTeacherDict">
+            <summary>
+            取得所有輔導相關老師
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.AttendeesXMLToString(System.String)">
+            <summary>
+            解析參與人員從XMLToStringA1,A2,A3
+            </summary>
+            <param name="XMLString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.CounselTypeXMLToString(System.String)">
+            <summary>
+            解析輔導方式從XMLToStringA1,A2,A3
+            </summary>
+            <param name="XMLString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.CounselTypeKindXMLToString(System.String)">
+            <summary>
+            解析輔導歸類從XMLToStringA1,A2,A3
+            </summary>
+            <param name="XMLString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetConvertCounselXMLVal_Attendees(System.String)">
+            <summary>
+            解析參與人員成Dict
+            </summary>
+            <param name="XMLString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetConvertCounselXMLVal_CounselType(System.String)">
+            <summary>
+            解析輔導方式成Dict
+            </summary>
+            <param name="XMLString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetConvertCounselXMLVal_CounselTypeKind(System.String)">
+            <summary>
+            解析輔導歸類成Dict
+            </summary>
+            <param name="XMLString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetAllStudentID1">
+            <summary>
+            取得所有學生ID,Key:(學號+姓名) Value:StudentID(int型態)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetAllCounselStudentTeacherNameDict">
+            <summary>
+            取得所有學生輔導相關老師名稱(班導師與有設定輔導相關老師
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetCounselXmlItemList_InterView">
+            <summary>
+            取得輔導晤談勾選項目名稱
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetCounselXmlItemList_CaseMeeting">
+            <summary>
+            個案會議選項
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetHasCounselStudQuizDataStudNumberByQuizID(System.String)">
+            <summary>
+            依測驗編號取得已有測驗學生學號
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetAllStudenNumberStatusDict">
+            <summary>
+            取得所有學生學號_狀態對應 StudentNumber_Status,id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetAllStudentClassSeatNoStatusDict">
+            <summary>
+            取得學生班級座號狀態對照 class_seatno_status,id，如有同狀態班座取第一筆
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetAllTeacherNameIDDict">
+            <summary>
+            取得教師狀態為一般的名稱與ID對應 name(niclname),id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetStudentStatusDBValDict">
+            <summary>
+            取得學生狀態與資料庫數字對應
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetStudentID(System.String,System.String)">
+            <summary>
+            透過學號狀態取得學生ID
+            </summary>
+            <param name="StudentNumber"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetStudentID(System.String,System.String,System.String)">
+            <summary>
+            透過班級座號狀態取得學生ID
+            </summary>
+            <param name="StudentNumber"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.CheckAddContent(System.String)">
+            <summary>
+            檢查是否加入資料項目
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetClassGradeYear">
+            <summary>
+            取得系統內班級的年級
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Counsel_System.Utility.GetClassGradeYearDict" -->
+        <member name="M:Counsel_System.Utility.ConvertGradeYearSemester(System.Int32,System.Int32)">
+            <summary>
+            轉換年級學期字串(一上..)
+            </summary>
+            <param name="GradeYear"></param>
+            <param name="Semester"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetABCard_StudentTextScoreDict(System.Collections.Generic.List{System.String})">
+            <summary>
+            讀取日常生活表現具體建議與導師評語
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetStudentGraduateDict(System.Collections.Generic.List{System.String})">
+            <summary>
+            取得畢業資訊
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetStudentUpdateRecDict(System.Collections.Generic.List{System.String})">
+            <summary>
+            取得學生異動資料
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetStudentMDRecDict(System.Collections.Generic.List{System.String})">
+            <summary>
+            取得學生獎懲資料
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetABCard_StudentSpecCourseDict(System.Collections.Generic.List{System.String})">
+            <summary>
+            取得AB表用學生選社團
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetABCard_StudentTheCadreDict(System.Collections.Generic.List{System.String})">
+            <summary>
+            取得AB表用學生擔任幹部
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetAB_StudSemsDomainScoreDict(System.Collections.Generic.List{System.String})">
+            <summary>
+            AB表用取得學生學期領域成績與畢業成績
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetStudGraduateDictJH(System.Collections.Generic.List{System.String})">
+            <summary>
+            取得學生畢業領域成績(國中)
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.HorizontallyMergeCells(Aspose.Words.Cell,Aspose.Words.Cell)">
+            <summary>
+            處理 Aspose Word 水平合併(左至右)(單一)
+            </summary>
+            <param name="left"></param>
+            <param name="right"></param>
+        </member>
+        <member name="M:Counsel_System.Utility.VerticallyMergeCells(Aspose.Words.Cell,Aspose.Words.Cell)">
+            <summary>
+            Aspose Word 垂直合併上至下(單一)
+            </summary>
+            <param name="top"></param>
+            <param name="bottom"></param>
+        </member>
+        <member name="M:Counsel_System.Utility.ParseCaseMeetingRecordToABRptData(System.Collections.Generic.List{System.String})">
+            <summary>
+            轉換個案會議資料至AB表輔導資料
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.AB_Counsel_Item_Add(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            解析AB表內輔導需要項目內重並放入
+            </summary>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.AB_Counset_AddString(System.String,System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            AB表報表用當有值才加入內容
+            </summary>
+            <param name="name"></param>
+            <param name="value"></param>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.ParseCareRecordToABRptData(System.Collections.Generic.List{System.String})">
+            <summary>
+            轉換優先關懷資料至AB表輔導資料
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.ParseInterViewDataToABRptData(System.Collections.Generic.List{System.String})">
+            <summary>
+            轉換晤談資料至AB表輔導資料
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetTeacherNameLoginIDStatus1">
+            <summary>
+            取得一般狀態的教師名稱帳號
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.ConvertString1(K12.Data.StudentRecord)">
+            <summary>
+            轉換Log需要班級座號姓名
+            </summary>
+            <param name="rec"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetConvertStringDict1fromDB(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            取得 Log 用名稱
+            </summary>
+            <param name="intStudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.SortStudentID1(System.Collections.Generic.List{System.String})">
+            <summary>
+            將學生 ID 依照班級順序、班級名稱、座號排序
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.SortStudentID2(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            將學生 ID 依照班級順序、班級名稱、座號排序
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetStudentIDList1ByClassID(System.Collections.Generic.List{System.String})">
+            <summary>
+            透過班級ID取得班級內學生狀態一般的學生ID
+            </summary>
+            <param name="ClassIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetStudentIDListByStudentID(System.Collections.Generic.List{System.String})">
+            <summary>
+            班座排序
+            </summary>
+            <param name="StudIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.Counsel_Yearly_Parse1(Counsel_System.DAO.UDTYearlyDataDef)">
+            <summary>
+            報表用解析輔導綜合紀錄學年型 一：；二：；..
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.Counsel_Yearly_Parse2(Counsel_System.DAO.UDTYearlyDataDef,System.Int32)">
+            <summary>
+            報表用解析輔導綜合紀錄學年型
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.Counsel_Multiple_Parse(System.Collections.Generic.List{Counsel_System.DAO.UDTMultipleRecordDef},System.String)">
+            <summary>
+            輔導綜合紀錄表報表多選轉換，點隔開
+            </summary>
+            <param name="data"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.Counsel_PriorityData_Parse1(Counsel_System.DAO.UDTPriorityDataDef)">
+            <summary>
+            報表用解析輔導綜合紀錄優先順序 一：；二：；..
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.Counsel_SemesterData_Parse1(Counsel_System.DAO.UDTSemesterDataDef,System.Int32)">
+            <summary>
+            處理報表學期型值
+            </summary>
+            <param name="data"></param>
+            <param name="idx"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.CounselStudQuizXmlParse1(System.String)">
+            <summary>
+            解析心理測驗
+            </summary>
+            <param name="strXML"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetUpdateRecordInfo(System.Collections.Generic.List{System.String})">
+            <summary>
+            取得異動相關資料，因為DAL有bug
+            </summary>
+            <param name="dataList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetSemeterDomainScoreByStudentIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            取得國中領域成績
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetSemeterSchoolYearScoreByStudentIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+             取得學期分項學年度學期編號
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetSemeterEntryScoreByStudentIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            取得學期分項成績(不含德行)
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetGradeScoreSHByStudentIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            取得高中畢業成績不含德行
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.UpdateABQuestions">
+            <summary>
+            更新綜合表現紀錄表1(暫時使用，日後需要刪除)
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Utility.NewAddUDTQuestionsDataDef">
+            <summary>
+            新加入
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.Utility.GetInterviewRecordDictByTeacherID1(System.Collections.Generic.List{System.String})">
+            <summary>
+            透過教師ID取得晤談紀錄簽認表用資料
+            </summary>
+            <param name="TeacherIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Counsel_System.Forms.QuizForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.QuizForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.QuizForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.UDT_StudQuizDataDef">
+            <summary>
+            學生測驗資料
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_StudQuizDataDef.QuizID">
+            <summary>
+            測驗ID(Key)
+            </summary>        
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_StudQuizDataDef.StudentID">
+            <summary>
+            學生編號
+            </summary>        
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_StudQuizDataDef.ImplementationDate">
+            <summary>
+            實施日期
+            </summary>        
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_StudQuizDataDef.AnalysisDate">
+            <summary>
+            解析日期
+            </summary>        
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_StudQuizDataDef.Content">
+            <summary>
+            內容(XML)
+            </summary>        
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_StudQuizDataDef.AuthorID">
+            <summary>
+            記錄人的登入帳號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_StudQuizDataDef.StudentStatus">
+            <summary>
+            學生狀態(不存入UDT)
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.UDTTransfer">
+            <summary>
+            UDT 資料交換者
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.InsertQuizData(Counsel_System.DAO.UDT_QuizDef)">
+            <summary>
+            新增測驗資料
+            </summary>
+            <param name="QuizData"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.UpdateQuizData(Counsel_System.DAO.UDT_QuizDef)">
+            <summary>
+            更新測驗資料
+            </summary>
+            <param name="QuizData"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetAllQuizData">
+            <summary>
+            取得所有測驗
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetQuizDataByID(System.String)">
+            <summary>
+            測過測驗ID取得測驗
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.DeleteQuizData(Counsel_System.DAO.UDT_QuizDef)">
+            <summary>
+            刪除測驗資料
+            </summary>
+            <param name="QuizName"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.InsertStudQuizData(Counsel_System.DAO.UDT_StudQuizDataDef)">
+            <summary>
+            新增學生測驗資料(單筆)
+            </summary>
+            <param name="studQuizData"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.UpdateStudQuizData(Counsel_System.DAO.UDT_StudQuizDataDef)">
+            <summary>
+            更新學生測驗資料(單筆)
+            </summary>
+            <param name="studQuizData"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.InsertStudQuizDataLlist(System.Collections.Generic.List{Counsel_System.DAO.UDT_StudQuizDataDef})">
+            <summary>
+            新增多筆學生測驗
+            </summary>
+            <param name="studQuizDataList"></param>
+            <param name="isInsert"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.UpdateStudQuizDataLlist(System.Collections.Generic.List{Counsel_System.DAO.UDT_StudQuizDataDef})">
+            <summary>
+            更新多筆學生測驗
+            </summary>
+            <param name="studQuizDataList"></param>
+            <param name="isInsert"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.DeleteStudQuizDataLlist(System.Collections.Generic.List{Counsel_System.DAO.UDT_StudQuizDataDef})">
+            <summary>
+             刪除多筆學生測驗
+            </summary>
+            <param name="studQuizDataList"></param>
+            <param name="isInsert"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetStudQuizDataByStudentID(System.String)">
+            <summary>
+            依學生編號取得學生測驗資料內容
+            </summary>
+            <param name="StudentID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetStudQuizDataByStudentIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            依學生編號取得學生測驗資料內容
+            </summary>
+            <param name="StudentID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetStudQuizDataByQuizID(System.String)">
+            <summary>
+            依測驗編號取得學生測驗資料內容
+            </summary>
+            <param name="StudentID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.CreateCounselUDTTable">
+            <summary>
+            建立使用到的 UDT Table
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetCounselStudentInterviewRecordByStudentID(System.String)">
+            <summary>
+            透過學生ID取得晤談紀錄
+            </summary>
+            <param name="StudentID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetCounselStudentInterviewRecordByStudentIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            透過多筆學生ID取得晤談紀錄
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetCounselStudentInterviewRecordByTeacherIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            透過多筆教師ID取得晤談紀錄
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.InstallCounselStudentInterviewRecord(Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef)">
+            <summary>
+            新增一筆晤談紀錄至UDT
+            </summary>
+            <param name="StudentInterviewRecord"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.InstallCounselStudentInterviewRecordList(System.Collections.Generic.List{Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef})">
+            <summary>
+            新增多筆晤談紀錄至UDT
+            </summary>
+            <param name="StudentInterviewRecordList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.UpdateCounselStudentInterviewRecord(Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef)">
+            <summary>
+            更新一筆晤談紀錄至UDT
+            </summary>
+            <param name="StudentInterviewRecord"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.UpdateCounselStudentInterviewRecordList(System.Collections.Generic.List{Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef})">
+            <summary>
+            更新多筆晤談紀錄至UDT
+            </summary>
+            <param name="StudentInterviewRecordList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.DeleteCounselStudentInterviewRecord(Counsel_System.DAO.UDT_CounselStudentInterviewRecordDef)">
+            <summary>
+            刪除一筆 UDT 晤談紀錄
+            </summary>
+            <param name="StudentInterviewRecord"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.InsertCareRecord(Counsel_System.DAO.UDT_CounselCareRecordDef)">
+            <summary>
+            新增單筆關懷
+            </summary>
+            <param name="CareRecordDef"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.InsertCareRecordList(System.Collections.Generic.List{Counsel_System.DAO.UDT_CounselCareRecordDef})">
+            <summary>
+            新增多筆關懷
+            </summary>
+            <param name="CareRecordList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.UpdateCareRecord(Counsel_System.DAO.UDT_CounselCareRecordDef)">
+            <summary>
+            更新單筆關懷
+            </summary>
+            <param name="CareRecordDef"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.UpdateCareRecordList(System.Collections.Generic.List{Counsel_System.DAO.UDT_CounselCareRecordDef})">
+            <summary>
+            更新多筆關懷
+            </summary>
+            <param name="CareRecordList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.DeleteCareRecord(Counsel_System.DAO.UDT_CounselCareRecordDef)">
+            <summary>
+            刪除單筆關懷
+            </summary>
+            <param name="CareRecordDef"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetCareRecordsByStudentID(System.String)">
+            <summary>
+            依學生編號取得關懷
+            </summary>
+            <param name="StudentID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetCareRecordsByStudentIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            依多筆學生編號取得關懷
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.InsertCaseMeetingRecord(Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef)">
+            <summary>
+            新增單筆個案會議
+            </summary>
+            <param name="CaseMeetingRecord"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.InsertCaseMeetingRecordList(System.Collections.Generic.List{Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef})">
+            <summary>
+            新增多筆個案會議
+            </summary>
+            <param name="CaseMeetingRecordList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.UpdateCaseMeetingRecord(Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef)">
+            <summary>
+            更新單筆個案會議
+            </summary>
+            <param name="CaseMeetingRecord"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.UpdateCaseMeetingRecordList(System.Collections.Generic.List{Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef})">
+            <summary>
+            更新多筆個案會議
+            </summary>
+            <param name="CaseMeetingRecordList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.DeleteCaseMeetingRecord(Counsel_System.DAO.UDT_CounselCaseMeetingRecordDef)">
+            <summary>
+            刪除1筆個案會議
+            </summary>
+            <param name="CaseMeetingRecord"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetCaseMeetingRecordListByStudentID(System.String)">
+            <summary>
+            透過學生ID取得學生個案會議
+            </summary>
+            <param name="StudentID"></param>
+            <returns></returns>s
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetCaseMeetingRecordListByStudentIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            透過多筆學生ID取得學生個案會議
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetABCardDataListByStudentList(System.Collections.Generic.List{System.String})">
+            <summary>
+            透過學生IDList取得綜合表現答案
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetCounselStudentListID(System.String)">
+            <summary>
+            透過學生ID取得學生輔導老師
+            </summary>
+            <param name="StudentID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetCounselStudentListByTeacherTagID(System.Int32)">
+            <summary>
+            透過TeacherTagID取得學生輔導老師
+            </summary>
+            <param name="StudentID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetTeacherTagIDByTeacherID(System.String,System.String)">
+            <summary>
+            透過教師ID,類別名稱取得所TagID
+            </summary>
+            <param name="TeacherID"></param>
+            <param name="TagName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetCounselStudentListIDs(System.Collections.Generic.List{System.String})">
+            <summary>
+            透過多筆學生ID，取得學生輔導老師
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.InsertCounselStudentList(System.Collections.Generic.List{Counsel_System.DAO.UDT_CounselStudent_ListDef})">
+            <summary>
+            新增多筆學生輔導老師
+            </summary>
+            <param name="CounselStudent_List"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.UpdateCounselStudentList(System.Collections.Generic.List{Counsel_System.DAO.UDT_CounselStudent_ListDef})">
+            <summary>
+            更新多筆學生輔導老師
+            </summary>
+            <param name="CounselStudent_List"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.DeleteCounselStudentList(System.Collections.Generic.List{Counsel_System.DAO.UDT_CounselStudent_ListDef})">
+            <summary>
+            刪除多筆學生輔導老師
+            </summary>
+            <param name="CounselStudent_List"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.InsertCounselUsereDefinfDataList(System.Collections.Generic.List{Counsel_System.DAO.UDT_CounselUserDefDataDef})">
+            <summary>
+            新增多筆輔導使用者自訂欄位
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.UpdateCounselUserDefineDataList(System.Collections.Generic.List{Counsel_System.DAO.UDT_CounselUserDefDataDef})">
+            <summary>
+            更新多筆輔導使用者自訂欄位
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.DeleteCounselUserDefineDataList(System.Collections.Generic.List{Counsel_System.DAO.UDT_CounselUserDefDataDef})">
+            <summary>
+            刪除多筆輔導使用者自訂欄位
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetCounselUserDefineDataByStudentIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            依學生IDList取得輔導自訂欄位資料
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetStudentStatusByIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            透過學生ID取得學生狀態ID:int,
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetABCardTemplate">
+            <summary>
+            取得ABCard樣板內容
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.InsertABCardTemplate(System.Collections.Generic.List{Counsel_System.DAO.UDT_ABCardTemplateDefinitionDef})">
+            <summary>
+            新增ABCard樣板內容
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.UpdateABCardTemplate(System.Collections.Generic.List{Counsel_System.DAO.UDT_ABCardTemplateDefinitionDef})">
+            <summary>
+            更新ABCard樣板內容
+            </summary>
+            <param name="RecList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.DeleteABCardTemplate(System.Collections.Generic.List{Counsel_System.DAO.UDT_ABCardTemplateDefinitionDef})">
+            <summary>
+            刪除ABCard樣板內容
+            </summary>
+            <param name="RecList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.InsertSystemList(System.Collections.Generic.List{Counsel_System.DAO.UDT_SystemListDef})">
+            <summary>
+            新增輔導系統設定內容
+            </summary>
+            <param name="RecList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.UpdateSystemList(System.Collections.Generic.List{Counsel_System.DAO.UDT_SystemListDef})">
+            <summary>
+            修改輔導系統設定內容
+            </summary>
+            <param name="RecList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.GetSystemListByName(System.String)">
+            <summary>
+            透過名稱取得設定內容
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.DeleteSystemList(System.Collections.Generic.List{Counsel_System.DAO.UDT_SystemListDef})">
+            <summary>
+            刪除輔導系統設定內容
+            </summary>
+            <param name="RecList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTRelativeInsert(System.Collections.Generic.List{Counsel_System.DAO.UDTRelativeDef})">
+            <summary>
+            新增綜合紀錄表 親屬資訊
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTRelativeUpdate(System.Collections.Generic.List{Counsel_System.DAO.UDTRelativeDef})">
+            <summary>
+            更新綜合紀錄表 親屬資訊
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTRelativeDelete(System.Collections.Generic.List{Counsel_System.DAO.UDTRelativeDef})">
+            <summary>
+            刪除綜合紀錄表 親屬資訊
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTRelativeSelectByStudentIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            依學生ID 查詢 綜合紀錄表 親屬資訊 
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTSiblingInsert(System.Collections.Generic.List{Counsel_System.DAO.UDTSiblingDef})">
+            <summary>
+            新增綜合紀錄表 兄弟姊妹資訊
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTSiblingUpdate(System.Collections.Generic.List{Counsel_System.DAO.UDTSiblingDef})">
+            <summary>
+            更新綜合紀錄表 兄弟姊妹資訊
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTSiblingDelete(System.Collections.Generic.List{Counsel_System.DAO.UDTSiblingDef})">
+            <summary>
+            刪除綜合紀錄表 兄弟姊妹資訊
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTSiblingSelectByStudentIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            依學生ID 查詢 綜合紀錄表 兄弟姊妹資訊 
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTSingleRecordInsert(System.Collections.Generic.List{Counsel_System.DAO.UDTSingleRecordDef})">
+            <summary>
+            新增綜合紀錄表 單一記錄
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTSingleRecordUpdate(System.Collections.Generic.List{Counsel_System.DAO.UDTSingleRecordDef})">
+            <summary>
+            更新綜合紀錄表 單一記錄
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTSingleRecordDelete(System.Collections.Generic.List{Counsel_System.DAO.UDTSingleRecordDef})">
+            <summary>
+            刪除綜合紀錄表 單一記錄
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTSingleRecordSelectByStudentIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            依學生ID 查詢 綜合紀錄表 單一記錄 
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTMultipleRecordInsert(System.Collections.Generic.List{Counsel_System.DAO.UDTMultipleRecordDef})">
+            <summary>
+            新增綜合紀錄表 複選記錄
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTMultipleRecordUpdate(System.Collections.Generic.List{Counsel_System.DAO.UDTMultipleRecordDef})">
+            <summary>
+            更新綜合紀錄表 複選記錄
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTMultipleRecordDelete(System.Collections.Generic.List{Counsel_System.DAO.UDTMultipleRecordDef})">
+            <summary>
+            刪除綜合紀錄表 複選記錄
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTMultipleRecordSelectByStudentIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            依學生ID 查詢 綜合紀錄表 複選記錄 
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTYearlyDataInsert(System.Collections.Generic.List{Counsel_System.DAO.UDTYearlyDataDef})">
+            <summary>
+            新增綜合紀錄表 每年資料
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTYearlyDataUpdate(System.Collections.Generic.List{Counsel_System.DAO.UDTYearlyDataDef})">
+            <summary>
+            更新綜合紀錄表 每年資料
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTYearlyDataDelete(System.Collections.Generic.List{Counsel_System.DAO.UDTYearlyDataDef})">
+            <summary>
+            刪除綜合紀錄表 每年資料
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTYearlyDataSelectByStudentIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            依學生ID 查詢 綜合紀錄表 每年資料 
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTSemesterDataInsert(System.Collections.Generic.List{Counsel_System.DAO.UDTSemesterDataDef})">
+            <summary>
+            新增綜合紀錄表 每學期資料
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTSemesterDataUpdate(System.Collections.Generic.List{Counsel_System.DAO.UDTSemesterDataDef})">
+            <summary>
+            更新綜合紀錄表 每學期資料
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTSemesterDataDelete(System.Collections.Generic.List{Counsel_System.DAO.UDTSemesterDataDef})">
+            <summary>
+            刪除綜合紀錄表 每學期資料
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTSemesterDataSelectByStudentIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            依學生ID 查詢 綜合紀錄表 每學期資料 
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTQuestionsDataInsert(System.Collections.Generic.List{Counsel_System.DAO.UDTQuestionsDataDef})">
+            <summary>
+            新增綜合紀錄表 題目資料
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTQuestionsDataUpdate(System.Collections.Generic.List{Counsel_System.DAO.UDTQuestionsDataDef})">
+            <summary>
+            更新綜合紀錄表 題目資料
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTQuestionsDataDelete(System.Collections.Generic.List{Counsel_System.DAO.UDTQuestionsDataDef})">
+            <summary>
+            刪除綜合紀錄表 題目資料
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTQuestionsDataSelectAll">
+            <summary>
+            取得綜合表現記錄所有題目
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTQuestionsDataDeleteAll">
+            <summary>
+            清空綜合表現記錄所有題目
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTQuestionsDataSelectByGroupName(System.String)">
+            <summary>
+            依群組名稱取得綜合表現記錄該群組所有題目
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTPriorityDataInsert(System.Collections.Generic.List{Counsel_System.DAO.UDTPriorityDataDef})">
+            <summary>
+            新增綜合紀錄表 優先順序
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTPriorityDataUpdate(System.Collections.Generic.List{Counsel_System.DAO.UDTPriorityDataDef})">
+            <summary>
+            更新綜合紀錄表 優先順序
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTPriorityDataDelete(System.Collections.Generic.List{Counsel_System.DAO.UDTPriorityDataDef})">
+            <summary>
+            刪除綜合紀錄表 優先順序
+            </summary>
+            <param name="dataList"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.UDTTransfer.ABUDTPriorityDataSelectByStudentIDList(System.Collections.Generic.List{System.String})">
+            <summary>
+            依學生ID 查詢 綜合紀錄表 優先順序 
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Counsel_System.DAO.LogValue">
+            <summary>
+            log 值用
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.LogValue.isSame">
+            <summary>
+            值是否相同
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.LogValue.getChangeString1">
+            <summary>
+            取的新舊值改變字串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.LogValue.getInsertString1">
+            <summary>
+            取得新增值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.LogValue.getDeleteString1">
+            <summary>
+            取得刪除值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Counsel_System.DAO.LogValue.Name">
+            <summary>
+            名稱
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.LogValue.OldValue">
+            <summary>
+            舊值
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.LogValue.NewValue">
+            <summary>
+            新值
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.UDTMultipleRecordDef">
+            <summary>
+            輔導-複選記錄
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTMultipleRecordDef.StudentID">
+            <summary>
+             學生編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTMultipleRecordDef.Key">
+            <summary>
+             識別值
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTMultipleRecordDef.Data">
+            <summary>
+             資料
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTMultipleRecordDef.Remark">
+            <summary>
+             備註
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.QuestionData">
+            <summary>
+            題目資料
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.QuestionData.GetUpdateData">
+            <summary>
+            取得更新後資料
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Counsel_System.DAO.QuestionData.QControlType">
+            <summary>
+            控制項類型
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.QuestionData.QQuestionType">
+            <summary>
+            題目類型
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.QuestionData.CanPrint">
+            <summary>
+            是否能列印
+            </summary>
+        </member>
+        <member name="F:Counsel_System.UI.SubjectUIDefinition.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:Counsel_System.UI.SubjectUIDefinition.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:Counsel_System.UI.SubjectUIDefinition.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Counsel_System.Parser.GridColumn" -->
+        <member name="T:Counsel_System.ImportExport.ExportABCardData">
+            <summary>
+            匯出輔導綜合紀錄表
+            </summary>
+        </member>
+        <member name="F:Counsel_System.ImportExport.ExportABCardData._tableNameList">
+            <summary>
+            資料表名稱
+            </summary>
+        </member>
+        <member name="F:Counsel_System.ImportExport.ExportABCardData._dtColumnsDict">
+            <summary>
+            資料表欄位名稱
+            </summary>
+        </member>
+        <member name="F:Counsel_System.ImportExport.ExportABCardData._dtTablesDict">
+            <summary>
+            資料表內容
+            </summary>
+        </member>
+        <member name="F:Counsel_System.ImportExport.ExportABCardData._ABCardDataDict">
+            <summary>
+            綜合紀錄表內容資料
+            </summary>
+        </member>
+        <member name="F:Counsel_System.ImportExport.ExportABCardData._studRecDict">
+            <summary>
+            學生基本資料
+            </summary>
+        </member>
+        <member name="F:Counsel_System.ImportExport.ExportABCardData._StudABCardDataTempDict">
+            <summary>
+            暫存學生綜合紀錄資料使用 StudentID,TableName,ColumnName,Value
+            </summary>
+        </member>
+        <member name="F:Counsel_System.ImportExport.ExportABCardData._ABCardDataList">
+            <summary>
+            綜合紀錄表答案
+            </summary>
+        </member>
+        <member name="M:Counsel_System.ImportExport.ExportABCardData.CreateDataTableAndColunms">
+            <summary>
+            資料存方資料相關 DataTable
+            </summary>
+        </member>
+        <member name="M:Counsel_System.ImportExport.ExportABCardData.getColumnsName(System.String)">
+            <summary>
+            取的欄位名稱
+            </summary>
+            <param name="sheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.ImportExport.ExportABCardData.FillDataToDataTable">
+            <summary>
+            將資料寫入 DataTable
+            </summary>
+        </member>
+        <member name="M:Counsel_System.ImportExport.ExportABCardData.elmConvertCheckItemToList(System.Xml.Linq.XElement)">
+            <summary>
+            轉換答案內 checkBox 型態內容
+            </summary>
+            <param name="elmItems"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.ImportExport.ExportABCardData.ExportDataTableToExcel">
+            <summary>
+            將 DataTable 內資料匯出至 Excel
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.StudCareRecordForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudCareRecordForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudCareRecordForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudCareRecordForm.ChecktxtRemarkEnable">
+            <summary>
+            檢查當選擇是其它，備註功能開啟，否則關閉。
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudInterviewDataContent.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudInterviewDataContent.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudInterviewDataContent.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.StudABCard02_SiblingForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard02_SiblingForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.StudABCard02_SiblingForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.DelStudentQuizDataForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.DelStudentQuizDataForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.DelStudentQuizDataForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.DelStudentQuizDataForm.#ctor(System.Collections.Generic.List{System.String})">
+            <summary>
+            刪除學生測驗資料
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.AddABCardSubjectNameForm.GetAddSubjectName">
+            <summary>
+            取得新增的綜合表現名稱
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Counsel_System.Forms.AddABCardSubjectNameForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.AddABCardSubjectNameForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.AddABCardSubjectNameForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.ABCardQuestionsForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.ABCardQuestionsForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.ABCardQuestionsForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.ABCardQuestionsForm.PrepareData">
+            <summary>
+            與先載入資料
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Forms.ABCardPrintForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Forms.ABCardPrintForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Counsel_System.Forms.ABCardPrintForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.UDT_CounselCareRecordDef">
+            <summary>
+            輔導-優先關懷
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCareRecordDef.StudentID">
+            <summary>
+             學生編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCareRecordDef.CodeName">
+            <summary>
+             代號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCareRecordDef.FileDate">
+            <summary>
+             立案日期
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCareRecordDef.CaseCategory">
+            <summary>
+             個案類別
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCareRecordDef.CaseCategoryRemark">
+            <summary>
+             個案類別備註
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCareRecordDef.CaseOrigin">
+            <summary>
+             個案來源
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCareRecordDef.CaseOriginRemark">
+            <summary>
+             個案來源備註
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCareRecordDef.Superiority">
+            <summary>
+             優勢
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCareRecordDef.Weakness">
+            <summary>
+             弱勢
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCareRecordDef.OtherInstitute">
+            <summary>
+             校外輔導機構
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCareRecordDef.CounselGoal">
+            <summary>
+             輔導目標
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCareRecordDef.CounselType">
+            <summary>
+             輔導方式
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCareRecordDef.AssistedMatter">
+            <summary>
+             協助導師事項
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCareRecordDef.AuthorID">
+            <summary>
+            記錄人的登入帳號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCareRecordDef.AuthorName">
+            <summary>
+            記錄人的姓名
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDT_CounselCareRecordDef.StudentStatus">
+            <summary>
+            學生狀態(不存入UDT)
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.UDTPriorityDataDef">
+            <summary>
+            輔導-優先順序資料
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTPriorityDataDef.StudentID">
+            <summary>
+             學生編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTPriorityDataDef.Key">
+            <summary>
+             識別值
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTPriorityDataDef.P1">
+            <summary>
+             順序1
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTPriorityDataDef.P2">
+            <summary>
+             順序2
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTPriorityDataDef.P3">
+            <summary>
+             順序3
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTPriorityDataDef.P4">
+            <summary>
+             順序4
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTPriorityDataDef.P5">
+            <summary>
+             順序5
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTPriorityDataDef.P6">
+            <summary>
+             順序6
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTPriorityDataDef.P7">
+            <summary>
+             順序7
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTPriorityDataDef.P8">
+            <summary>
+             順序8
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTPriorityDataDef.P9">
+            <summary>
+             順序9
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTPriorityDataDef.P10">
+            <summary>
+             順序10
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.SubjectGroupConfig">
+            <summary>
+            綜合表現使用,資料存取 XML 轉換
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.SubjectGroupConfig.#ctor(System.String)">
+            <summary>
+            載入預設樣版
+            </summary>
+            <param name="template"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.SubjectGroupConfig.GetSubjectLabel">
+            <summary>
+            取得主題內label
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.SubjectGroupConfig.SetSubjectLabel(System.String)">
+            <summary>
+            設定主題內 label 名稱
+            </summary>
+            <param name="label"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.SubjectGroupConfig.GetTemplateXMLString">
+            <summary>
+            取得儲存 XML 字串結構，回存資料庫使用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Counsel_System.DAO.SubjectGroupConfig.SubjectName">
+            <summary>
+            主題名稱
+            </summary>
+        </member>
+        <member name="F:Counsel_System.Contents.StudQuizDataContent.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:Counsel_System.Contents.StudQuizDataContent.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:Counsel_System.Contents.StudQuizDataContent.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.StudentInfoTransfer">
+            <summary>
+            學生資料處理
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.StudentInfoTransfer.GetStudentInfoList(System.Collections.Generic.List{System.String})">
+            <summary>
+            取得學生資訊
+            </summary>
+            <param name="StudentIDList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.StudentInfoTransfer.ConvertBaseStudentInfo">
+            <summary>
+            轉換基本資料
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.StudentInfoTransfer.ConvertUpdateRecord">
+            <summary>
+            轉換異動
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.StudentInfoTransfer.XmlAddressConvert(System.String)">
+            <summary>
+            轉換成完成地址
+            </summary>
+            <param name="xmlString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.StudentInfoTransfer.ConvertAttendance">
+            <summary>
+            轉換缺曠
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.StudentInfoTransfer.ConvertMerit">
+            <summary>
+            轉換獎勵
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.StudentInfoTransfer.ConvertStudentHistoryDict">
+            <summary>
+            轉換學期歷程
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.SortData1">
+            <summary>
+            給排序放資料使用
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.SortData1.Name">
+            <summary>
+            名稱
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.SortData1.Order">
+            <summary>
+            順序
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.DocumentMerge">
+            <summary>
+            word 資料與樣板合併
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.DocumentMerge.#ctor(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}},System.Byte[],System.String,System.Boolean)">
+            <summary>
+            Word文件合併
+            </summary>
+            <param name="合併項目名稱"></param>
+            <param name="合併資料"></param>
+            <param name="合併Word樣板"></param>
+            <param name="儲存路徑"></param>
+            <param name="是否直接開啟"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.DocumentMerge.Merge">
+            <summary>
+            執行合併資料並儲存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Counsel_System.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Counsel_System.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Counsel_System.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Counsel_System.Properties.Resources.ABCardTemplate">
+             <summary>
+               Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+            &lt;Subjects&gt;
+              &lt;Subject label=&quot;1.本人概況&quot;&gt;
+                &lt;!-- 大題 --&gt;
+                &lt;QG label=&quot;血型&quot;&gt;
+                  &lt;!-- 題組 --&gt;
+                  &lt;Choices&gt;
+                    &lt;!-- 選項清單 --&gt;
+                    &lt;Item label=&quot;A&quot; /&gt;
+                    &lt;Item label=&quot;B&quot; /&gt;
+                    &lt;Item label=&quot;O&quot; selected=&quot;true&quot; /&gt;
+                    &lt;!-- default selected --&gt;
+                    &lt;Item label=&quot;AB&quot; /&gt;
+                    &lt;Item label=&quot;其它&quot; hasText=&quot;true&quot; /&gt;
+                  &lt;/Choices&gt;
+                  &lt;Qs&gt;
+                    &lt;!-- 題目清單 --&gt;
+                    &lt;Q type=&quot;combobox&quot; name=&quot;AAA10000001&quot; label=&quot;&quot; /&gt;
+                    &lt;!-- 題目 [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Counsel_System.Properties.Resources.ABCardTransferDataOldMapping">
+             <summary>
+               Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+            &lt;ABCardTransferDataOldMapping&gt;
+              &lt;Item GroupName=&quot;1.本人概況&quot; QuestionName=&quot;血型&quot; Key=&quot;AAA10000001&quot; AType=&quot;&quot; TableName=&quot;本人概況&quot; ColumnName=&quot;血型&quot; /&gt;
+              &lt;Item GroupName=&quot;1.本人概況&quot; QuestionName=&quot;宗教&quot; Key=&quot;AAA10000002&quot; AType=&quot;&quot; TableName=&quot;本人概況&quot; ColumnName=&quot;宗教&quot; /&gt;
+              &lt;Item GroupName=&quot;1.本人概況&quot; QuestionName=&quot;身高一上&quot; Key=&quot;AAA10000005&quot; AType=&quot;&quot; TableName=&quot;本人概況&quot; ColumnName=&quot;身高一上&quot; /&gt;
+              &lt;Item GroupName=&quot;1.本人概況&quot; QuestionName=&quot;身高二上&quot; Key=&quot;AAA10000006&quot; AType=&quot;&quot; TableName=&quot;本人概況&quot; ColumnName=&quot;身高二上&quot;  [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Counsel_System.Properties.Resources.ImportStudentCareRecordVal">
+             <summary>
+               Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+            &lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;format.xsl&quot; ?&gt;
+            &lt;ValidateRule Name=&quot;學生優先關懷&quot;&gt;
+              &lt;DuplicateDetection&gt;
+                &lt;Detector Name=&quot;PrimaryKey1&quot;&gt;
+                  &lt;Field Name=&quot;學號&quot; /&gt;
+            	    &lt;Field Name=&quot;狀態&quot; /&gt;
+                  &lt;Field Name=&quot;立案日期&quot; /&gt;
+                  &lt;Field Name=&quot;個案類別&quot; /&gt;
+                &lt;/Detector&gt;
+              &lt;/DuplicateDetection&gt;
+              &lt;FieldList&gt;
+            
+                &lt;Field Required=&quot;False&quot; Name=&quot;代號&quot;&gt;      
+                &lt;/Field&gt;
+                
+                &lt;Field Required=&quot;True&quot; Name=&quot;學號&quot;&gt;
+                  &lt;Validate AutoCorrect=&quot;False&quot; Description=&quot;「學號 [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Counsel_System.Properties.Resources.ImportStudentCaseMeetingRecordVal">
+             <summary>
+               Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+            &lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;format.xsl&quot; ?&gt;
+            &lt;ValidateRule Name=&quot;學生個案會議&quot;&gt;
+              &lt;DuplicateDetection&gt;
+                &lt;Detector Name=&quot;PrimaryKey1&quot;&gt;
+                  &lt;Field Name=&quot;學號&quot; /&gt;
+              	  &lt;Field Name=&quot;狀態&quot; /&gt;
+                  &lt;Field Name=&quot;會議日期&quot; /&gt;
+                  &lt;Field Name=&quot;會議事由&quot;/&gt;
+                &lt;/Detector&gt;
+              &lt;/DuplicateDetection&gt;
+              &lt;FieldList&gt;
+            
+                &lt;Field Required=&quot;True&quot; Name=&quot;學號&quot;&gt;
+                  &lt;Validate AutoCorrect=&quot;False&quot; Description=&quot;「學號」不允許空白。&quot; ErrorType=&quot;Error&quot; Validator=&quot;不可空白&quot; When=&quot;&quot; /&gt;
+                &lt;/Field [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Counsel_System.Properties.Resources.ImportStudentInterViewDataVal">
+             <summary>
+               Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+            &lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;format.xsl&quot; ?&gt;
+            &lt;ValidateRule Name=&quot;晤談紀錄&quot;&gt;
+              &lt;DuplicateDetection&gt;
+                &lt;Detector Name=&quot;PrimaryKey1&quot;&gt;
+                  &lt;Field Name=&quot;學號&quot; /&gt;
+            	    &lt;Field Name=&quot;狀態&quot; /&gt;
+                  &lt;Field Name=&quot;日期&quot; /&gt;      
+                  &lt;Field Name=&quot;晤談事由&quot; /&gt;
+                &lt;/Detector&gt;
+              &lt;/DuplicateDetection&gt;
+              &lt;FieldList&gt;
+            
+                &lt;Field Required=&quot;True&quot; Name=&quot;學號&quot;&gt;
+                  &lt;Validate AutoCorrect=&quot;False&quot; Description=&quot;「學號」不允許空白。&quot; ErrorType=&quot;Error&quot; Validator=&quot;不可空白&quot; When=&quot;&quot; /&gt;
+                &lt;/Fi [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Counsel_System.Properties.Resources.ImportStudentUserDefDataVal">
+             <summary>
+               Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+            &lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;format.xsl&quot; ?&gt;
+            &lt;ValidateRule Name=&quot;學生使用者自訂欄位&quot;&gt;
+              &lt;DuplicateDetection&gt;
+                &lt;Detector Name=&quot;PrimaryKey1&quot;&gt;
+                  &lt;Field Name=&quot;學號&quot; /&gt;
+                  &lt;Field Name=&quot;狀態&quot; /&gt;
+                  &lt;Field Name=&quot;欄位名稱&quot; /&gt;
+                &lt;/Detector&gt;
+              &lt;/DuplicateDetection&gt;
+              &lt;FieldList&gt;
+            
+                &lt;Field Required=&quot;True&quot; Name=&quot;學號&quot;&gt;
+                  &lt;Validate AutoCorrect=&quot;False&quot; Description=&quot;「學號」不允許空白。&quot; ErrorType=&quot;Error&quot; Validator=&quot;不可空白&quot; When=&quot;&quot; /&gt;
+                &lt;/Field&gt;
+            
+                &lt;Field Required [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Counsel_System.Properties.Resources.ImportStudQuizDataVa_CSeatNo">
+             <summary>
+               Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+            &lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;format.xsl&quot; ?&gt;
+            &lt;ValidateRule Name=&quot;學生測驗資料&quot;&gt;
+              &lt;DuplicateDetection&gt;
+                &lt;Detector Name=&quot;PrimaryKey1&quot;&gt;
+                  &lt;Field Name=&quot;班級&quot; /&gt;
+                  &lt;Field Name=&quot;座號&quot; /&gt;
+                  &lt;Field Name=&quot;狀態&quot; /&gt;
+                &lt;/Detector&gt;
+              &lt;/DuplicateDetection&gt;
+              &lt;FieldList&gt;
+                &lt;Field Required=&quot;True&quot; Name=&quot;班級&quot;&gt;
+                  &lt;Validate AutoCorrect=&quot;False&quot; Description=&quot;「班級」不允許空白。&quot; ErrorType=&quot;Error&quot; Validator=&quot;不可空白&quot; When=&quot;&quot; /&gt;
+                &lt;/Field&gt;
+                &lt;Field Required=&quot;True&quot; N [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Counsel_System.Properties.Resources.ImportStudQuizDataVal_SNum">
+             <summary>
+               Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+            &lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;format.xsl&quot; ?&gt;
+            &lt;ValidateRule Name=&quot;學生測驗資料&quot;&gt;
+              &lt;DuplicateDetection&gt;
+                &lt;Detector Name=&quot;PrimaryKey1&quot;&gt;
+                  &lt;Field Name=&quot;學號&quot; /&gt;
+                  &lt;Field Name=&quot;狀態&quot; /&gt;
+                &lt;/Detector&gt;
+              &lt;/DuplicateDetection&gt;
+              &lt;FieldList&gt;
+                &lt;Field Required=&quot;True&quot; Name=&quot;學號&quot;&gt;
+                  &lt;Validate AutoCorrect=&quot;False&quot; Description=&quot;「學號」不允許空白。&quot; ErrorType=&quot;Error&quot; Validator=&quot;不可空白&quot; When=&quot;&quot; /&gt;
+                &lt;/Field&gt;
+                &lt;Field Required=&quot;True&quot; Name=&quot;狀態&quot;&gt;
+                  &lt;Validate  [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Counsel_System.Properties.Resources.Questions">
+             <summary>
+               Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+            &lt;Questions&gt;
+              &lt;Question&gt;
+                &lt;Group&gt;本人概況&lt;/Group&gt;
+                &lt;Name&gt;血型&lt;/Name&gt;
+                &lt;QuestionType&gt;SINGLE_ANSWER&lt;/QuestionType&gt;
+                &lt;ControlType&gt;RADIO_BUTTON&lt;/ControlType&gt;
+                &lt;CanPrint&gt;True&lt;/CanPrint&gt;
+                &lt;CanTeacherEdit&gt;True&lt;/CanTeacherEdit&gt;
+                &lt;CanStudentEdit&gt;True&lt;/CanStudentEdit&gt;
+                &lt;DisplayOrder&gt;1&lt;/DisplayOrder&gt;
+                &lt;Items&gt;
+                  &lt;item key=&quot;A&quot; has_remark=&quot;False&quot; /&gt;
+                  &lt;item key=&quot;B&quot; has_remark=&quot;False&quot; /&gt;
+                  &lt;item key=&quot;O&quot; has_remark=&quot;False&quot; /&gt;
+                  &lt;item [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.ABCardTemplateTransfer">
+            <summary>
+            處理綜合表現樣板交換
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardTemplateTransfer.GetQTypeList">
+            <summary>
+            取得問題類型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardTemplateTransfer.LoadAllTemplate(System.Collections.Generic.List{Counsel_System.DAO.UDT_ABCardTemplateDefinitionDef})">
+            <summary>
+            載入所有樣板
+            </summary>
+            <param name="ABCardTemplate"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardTemplateTransfer.GetQGLabelList(System.String)">
+            <summary>
+            透過 SubjectName 取得所有 QGLabelName
+            </summary>
+            <param name="SubjectName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardTemplateTransfer.GetUDTTemplateBySubjectLabel(System.String)">
+            <summary>
+            透過 SubjectLabel 取得 UDT 內資料(Cache)
+            </summary>
+            <param name="SubjectLabel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardTemplateTransfer.GetQuestionListBySubjectLabel(System.String)">
+            <summary>
+            透過 SubjectLabel 取得題目
+            </summary>
+            <param name="SubjectLabel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardTemplateTransfer.GetAllQuestionList">
+            <summary>
+            取得所有題目
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardTemplateTransfer.GetQsQNameList(System.String)">
+            <summary>
+            透過SubjectName 取得所有 QsQName
+            </summary>
+            <param name="SubjectName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardTemplateTransfer.GetAllQsQNameList">
+            <summary>
+            取得所有Question Name 給比對用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardTemplateTransfer.GetChoicesByQGLabel(System.String,System.String)">
+            <summary>
+            取得所選擇
+            </summary>
+            <param name="SubjectName"></param>
+            <param name="QGLabel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardTemplateTransfer.GetQsQByKey1(Counsel_System.DAO.QuestionPKey)">
+            <summary>
+            透過特定Key組合法取得單一Question
+            </summary>
+            <param name="qPkey"></param>
+            <param name="QType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardTemplateTransfer.SetQsQElement(Counsel_System.DAO.QuestionPKey)">
+            <summary>
+            透過特定Key組合法存入Question
+            </summary>
+            <param name="qPkey"></param>
+            <param name="QType"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardTemplateTransfer.HasSubject(System.String)">
+            <summary>
+            是否有題組
+            </summary>
+            <param name="SubjectName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.ABCardTemplateTransfer.GetAllSubjectNameList">
+            <summary>
+            取得所有題組名稱
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Counsel_System.ValidationRule.RowValidator.CheckTeacherNameRVal">
+            <summary>
+            檢查老師姓名是否存在
+            </summary>
+        </member>
+        <member name="T:Counsel_System.ImportExport.ImportStudQuizData">
+            <summary>
+            匯入學生測驗資料
+            </summary>
+        </member>
+        <member name="M:Counsel_System.ImportExport.ImportStudQuizData.SetQuizID(System.String)">
+            <summary>
+            設定測驗編號
+            </summary>
+            <param name="QuizID"></param>
+        </member>
+        <member name="M:Counsel_System.ImportExport.ImportStudQuizData.SetQuizName(System.String)">
+            <summary>
+            設定測驗名稱
+            </summary>
+            <param name="Name"></param>
+        </member>
+        <member name="M:Counsel_System.ImportExport.ImportStudQuizData.SetDataFieldNameList(System.Collections.Generic.List{System.String})">
+            <summary>
+            設定欄位
+            </summary>
+            <param name="DataFieldList"></param>
+        </member>
+        <member name="M:Counsel_System.ImportExport.ImportStudQuizData.GetSupportActions">
+            <summary>
+            取得支援的匯入動作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.ImportExport.ImportStudQuizData.Import(System.Collections.Generic.List{Campus.DocumentValidator.IRowStream})">
+            <summary>
+            分批執行匯入
+            </summary>
+            <param name="Rows">IRowStream物件列表</param>
+            <returns>分批匯入完成訊息</returns>
+        </member>
+        <member name="T:Counsel_System.DAO.UDTQuestionsDataDef">
+            <summary>
+            輔導-題目資料
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTQuestionsDataDef.Group">
+            <summary>
+             群組
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTQuestionsDataDef.Name">
+            <summary>
+             名稱
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTQuestionsDataDef.QuestionType">
+            <summary>
+             問題類型
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTQuestionsDataDef.ControlType">
+            <summary>
+             控制項類型
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTQuestionsDataDef.CanPrint">
+            <summary>
+             是否能列印
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTQuestionsDataDef.CanTeacherEdit">
+            <summary>
+             教師是否能修改
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTQuestionsDataDef.CanStudentEdit">
+            <summary>
+             學生是否能修改
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTQuestionsDataDef.DisplayOrder">
+            <summary>
+             顯示順序
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.UDTQuestionsDataDef.Items">
+            <summary>
+             項目內容
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.AB_SchoolYearSemesterIdx">
+            <summary>
+            AB表學年度學期索引
+            </summary>
+        </member>
+        <member name="T:Counsel_System.DAO.CareRecordItemManager">
+            <summary>
+            輔導優先關懷項目管理
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.CareRecordItemManager.CheckDefault">
+            <summary>
+            檢查預設是否存在
+            </summary>
+        </member>
+        <member name="M:Counsel_System.DAO.CareRecordItemManager.GetItemList(Counsel_System.DAO.CareRecordItemManager.ItemType)">
+            <summary>
+            取得項目
+            </summary>
+            <param name="name"></param>
+            <param name="itmType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Counsel_System.DAO.CareRecordItemManager.AddItem(System.String,Counsel_System.DAO.CareRecordItemManager.ItemType)">
+            <summary>
+            新增項目
+            </summary>
+            <param name="itemName"></param>
+            <param name="itmType"></param>
+        </member>
+        <member name="M:Counsel_System.DAO.CareRecordItemManager.GetDefaultItemXmlString(Counsel_System.DAO.CareRecordItemManager.ItemType)">
+            <summary>
+            取得預設資料
+            </summary>
+            <param name="itmType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Counsel_System.DAO.AnswerPkey">
+            <summary>
+            綜合表現答案
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AnswerPkey.StudentID">
+            <summary>
+            學生系統編號
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AnswerPkey.Label">
+            <summary>
+            答案標籤
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AnswerPkey.TemplateID">
+            <summary>
+            樣板ID
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AnswerPkey.Name">
+            <summary>
+            答案KeyName
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AnswerPkey.dataElement">
+            <summary>
+            答案資料
+            </summary>
+        </member>
+        <member name="P:Counsel_System.DAO.AnswerPkey.Question">
+            <summary>
+            放題目
+            </summary>
+        </member>
+    </members>
+</doc>

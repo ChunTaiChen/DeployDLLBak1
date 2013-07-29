@@ -1,0 +1,13 @@
+<Request>
+  <Course CourseID="11737">
+    <Exam ExamID="61">
+      <Student StudentID="58444" Score="0">
+        <Extension>
+          <Score>99</Score>
+          <AssignmentScore>100</AssignmentScore>
+          <Text>表現優良</Text>
+        </Extension>
+      </Student>
+    </Exam>
+  </Course>
+</Request>

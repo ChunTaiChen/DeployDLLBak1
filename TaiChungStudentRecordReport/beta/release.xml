@@ -1,0 +1,9 @@
+﻿<Release Version="0.0.0.1">
+  <Files>
+    <File Name="TaiChung.StudentRecordReport.dll" Folder="" Size="166400" Digest="hxyD5/UxR8aB2xatCao/shrZGWc=">
+      <AssemblyName>TaiChung.StudentRecordReport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.0</Version>
+    </File>
+    <File Name="TaiChung.StudentRecordReport.pdb" Folder="" Size="101888" Digest="C8+O+qXZDNN2QkV2Z7oknMxrX4Q=" />
+  </Files>
+</Release>

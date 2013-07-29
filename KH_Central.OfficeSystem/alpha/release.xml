@@ -1,0 +1,9 @@
+﻿<Release Version="0.0.1.5">
+  <Files>
+    <File Name="KH_Central.OfficeSystem.dll" Folder="" Size="171008" Digest="3Y1K21iuj2YqRwUY4s+qCI2cxeY=">
+      <AssemblyName>KH_Central.OfficeSystem, Version=1.0.0.12, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.12</Version>
+    </File>
+    <File Name="KH_Central.OfficeSystem.pdb" Folder="" Size="142848" Digest="oihJL4/k6acIBSRc6w4ofpARqRc=" />
+  </Files>
+</Release>

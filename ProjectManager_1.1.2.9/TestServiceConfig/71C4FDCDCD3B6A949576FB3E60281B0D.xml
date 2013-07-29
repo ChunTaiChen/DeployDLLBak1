@@ -1,0 +1,9 @@
+<Request>
+  <Attendance>
+    <RefStudentId>54940</RefStudentId>
+    <SchoolYear>100</SchoolYear>
+    <Semester>1</Semester>
+    <OccurDate>2011/09/01</OccurDate>
+    <Detail>&lt;Attendance&gt;&lt;Period AbsenceType="曠課"&gt;五&lt;/Period&gt;&lt;Period AbsenceType="曠課"&gt;六&lt;/Period&gt;&lt;Period AbsenceType="曠課"&gt;七&lt;/Period&gt;&lt;Period AbsenceType="曠課"&gt;八&lt;/Period&gt;&lt;/Attendance&gt;</Detail>
+  </Attendance>
+</Request>

@@ -1,0 +1,9 @@
+﻿<Release Version="0.0.0.10">
+  <Files>
+    <File Name="HsinChuExamScore_JH.dll" Folder="" Size="1067008" Digest="N2bqo9mzJZTdyLGnoYRMZyqh2aw=">
+      <AssemblyName>HsinChuExamScore_JH, Version=1.0.0.6, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.6</Version>
+    </File>
+    <File Name="HsinChuExamScore_JH.pdb" Folder="" Size="136704" Digest="mon+C/lKgDvVaQ0bHhrvZh1CM2o=" />
+  </Files>
+</Release>

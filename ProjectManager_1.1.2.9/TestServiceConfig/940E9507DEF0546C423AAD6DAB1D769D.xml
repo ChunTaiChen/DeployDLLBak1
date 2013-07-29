@@ -1,0 +1,143 @@
+<Request>
+  <SCAttendExtension CourseID="342" StudentID="116">
+    <Extension Name="GradeBook">
+      <Exam ExamID="11">
+        <Item SubExamID="26" Score="100" />
+        <Item SubExamID="43" Score="100" />
+        <Item SubExamID="59" Score="100" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+  <SCAttendExtension CourseID="342" StudentID="133">
+    <Extension Name="GradeBook">
+      <Exam ExamID="11">
+        <Item SubExamID="26" Score="73" />
+        <Item SubExamID="43" Score="70" />
+        <Item SubExamID="59" Score="90" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+  <SCAttendExtension CourseID="342" StudentID="160">
+    <Extension Name="GradeBook">
+      <Exam ExamID="11">
+        <Item SubExamID="26" Score="91" />
+        <Item SubExamID="43" Score="85" />
+        <Item SubExamID="59" Score="85" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+  <SCAttendExtension CourseID="342" StudentID="134">
+    <Extension Name="GradeBook">
+      <Exam ExamID="11">
+        <Item SubExamID="26" Score="82" />
+        <Item SubExamID="43" Score="100" />
+        <Item SubExamID="59" Score="90" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+  <SCAttendExtension CourseID="342" StudentID="109">
+    <Extension Name="GradeBook">
+      <Exam ExamID="11">
+        <Item SubExamID="26" Score="0" />
+        <Item SubExamID="30" Score="70" />
+        <Item SubExamID="43" Score="93" />
+        <Item SubExamID="59" Score="95" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+  <SCAttendExtension CourseID="342" StudentID="162">
+    <Extension Name="GradeBook">
+      <Exam ExamID="11">
+        <Item SubExamID="26" Score="99" />
+        <Item SubExamID="43" Score="100" />
+        <Item SubExamID="59" Score="100" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+  <SCAttendExtension CourseID="342" StudentID="110">
+    <Extension Name="GradeBook">
+      <Exam ExamID="11">
+        <Item SubExamID="26" Score="90" />
+        <Item SubExamID="43" Score="100" />
+        <Item SubExamID="59" Score="90" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+  <SCAttendExtension CourseID="342" StudentID="165">
+    <Extension Name="GradeBook">
+      <Exam ExamID="11">
+        <Item SubExamID="26" Score="0" />
+        <Item SubExamID="30" Score="70" />
+        <Item SubExamID="43" Score="60" />
+        <Item SubExamID="59" Score="100" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+  <SCAttendExtension CourseID="342" StudentID="166">
+    <Extension Name="GradeBook">
+      <Exam ExamID="11">
+        <Item SubExamID="26" Score="87" />
+        <Item SubExamID="43" Score="100" />
+        <Item SubExamID="59" Score="100" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+  <SCAttendExtension CourseID="342" StudentID="122">
+    <Extension Name="GradeBook">
+      <Exam ExamID="11">
+        <Item SubExamID="26" Score="0" />
+        <Item SubExamID="30" Score="55" />
+        <Item SubExamID="43" Score="100" />
+        <Item SubExamID="59" Score="82" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+  <SCAttendExtension CourseID="342" StudentID="167">
+    <Extension Name="GradeBook">
+      <Exam ExamID="11">
+        <Item SubExamID="26" Score="0" />
+        <Item SubExamID="30" Score="40" />
+        <Item SubExamID="57" Score="42" />
+        <Item SubExamID="62" Score="60" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+  <SCAttendExtension CourseID="342" StudentID="128">
+    <Extension Name="GradeBook">
+      <Exam ExamID="11">
+        <Item SubExamID="26" Score="0" />
+        <Item SubExamID="30" Score="45" />
+        <Item SubExamID="43" Score="100" />
+        <Item SubExamID="59" Score="50" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+  <SCAttendExtension CourseID="342" StudentID="137">
+    <Extension Name="GradeBook">
+      <Exam ExamID="11">
+        <Item SubExamID="26" Score="98" />
+        <Item SubExamID="43" Score="100" />
+        <Item SubExamID="59" Score="100" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+  <SCAttendExtension CourseID="342" StudentID="170">
+    <Extension Name="GradeBook">
+      <Exam ExamID="11">
+        <Item SubExamID="26" Score="0" />
+        <Item SubExamID="30" Score="45" />
+        <Item SubExamID="43" Score="70" />
+        <Item SubExamID="59" Score="78" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+  <SCAttendExtension CourseID="342" StudentID="114">
+    <Extension Name="GradeBook">
+      <Exam ExamID="11">
+        <Item SubExamID="26" Score="100" />
+        <Item SubExamID="43" Score="100" />
+        <Item SubExamID="59" Score="100" />
+      </Exam>
+    </Extension>
+  </SCAttendExtension>
+</Request>

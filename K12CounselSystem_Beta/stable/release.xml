@@ -1,0 +1,10 @@
+﻿<Release Version="2.0.7.12">
+  <Files>
+    <File Name="Counsel_System.dll" Folder="" Size="1883648" Digest="Vx8caa0T8A7bDiL6TOIhNeuGTBQ=">
+      <AssemblyName>Counsel_System, Version=1.0.0.172, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.172</Version>
+    </File>
+    <File Name="Counsel_System.pdb" Folder="" Size="1250816" Digest="l2MLgfVALsdzTZgVpX8BEfRr/bo=" />
+    <File Name="Counsel_System.XML" Folder="" Size="200989" Digest="FFr4WqXowAujaUfCWq4Gb1ePpgo=" />
+  </Files>
+</Release>

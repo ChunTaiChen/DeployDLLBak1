@@ -1,0 +1,9 @@
+﻿<Release Version="0.0.0.4">
+  <Files>
+    <File Name="K12StudentTagReport.dll" Folder="" Size="19968" Digest="l2sBqck9/sFmUg8FKJ97R8vyAXw=">
+      <AssemblyName>K12StudentTagReport, Version=1.0.0.3, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.3</Version>
+    </File>
+    <File Name="K12StudentTagReport.pdb" Folder="" Size="28160" Digest="nzvRU9878Q1vJ/vgJl6wY8M8CNc=" />
+  </Files>
+</Release>

@@ -1,0 +1,6 @@
+<Request>
+  <Condition>
+    <SchoolYear>100</SchoolYear>
+    <Semester>1</Semester>
+  </Condition>
+</Request>

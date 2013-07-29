@@ -1,0 +1,15 @@
+<Request>
+  <Attendance>
+    <Field>
+      <RefStudentId>58143</RefStudentId>
+      <SchoolYear>100</SchoolYear>
+      <Semester>2</Semester>
+      <OccurDate>2010/11/25</OccurDate>
+      <Detail>&lt;Attendance&gt;&lt;Period AbsenceType="病假" AttendanceType="升旗"&gt;升旗&lt;/Period&gt;&lt;/Attendance&gt;</Detail>
+    </Field>
+    <Condition>
+      <RefStudentId>58143</RefStudentId>
+      <OccurDate>2010/11/25</OccurDate>
+    </Condition>
+  </Attendance>
+</Request>

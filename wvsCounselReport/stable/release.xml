@@ -1,0 +1,14 @@
+﻿<Release Version="0.0.0.6">
+  <Files>
+    <File Name="AgeWarningList.dll" Folder="" Size="32256" Digest="Ok4HDxtsjiluvP223j+mBBJ/XU8=">
+      <AssemblyName>AgeWarningList, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.1</Version>
+    </File>
+    <File Name="AgeWarningList.pdb" Folder="" Size="42496" Digest="fnWqNjG3PWibfUfid40YXJ3KKpA=" />
+    <File Name="TestCounselApp01.dll" Folder="" Size="20480" Digest="Ln4u7XWbLpns+tMYPYEk38H7LrM=">
+      <AssemblyName>TestCounselApp01, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.0</Version>
+    </File>
+    <File Name="TestCounselApp01.pdb" Folder="" Size="28160" Digest="RSCX867W83EhqUBXySA5Kg8+vFg=" />
+  </Files>
+</Release>

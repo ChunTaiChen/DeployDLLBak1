@@ -1,0 +1,13 @@
+<Request>
+  <Field>
+    <All>
+    </All>
+  </Field>
+  <Condition>
+    <!--以下為必要條件-->
+    <SchoolYear>99</SchoolYear>
+    <Semester>1</Semester>
+    <ID>56006</ID>
+  </Condition>
+  <!--<Pagination><StartPage>1</StartPage><PageSize>0</PageSize></Pagination>-->
+</Request>

@@ -1,0 +1,13 @@
+<SCAttendExtension CourseID="343" StudentID="52931">
+  <Extension Name="GradeBook">
+    <Exam ExamID="61" Score="100">
+      <!-- 第一次定期評量下的小考  -->
+      <Item SubExamID="1" Score="1" />
+      <Item SubExamID="2" Score="" />
+      <Item SubExamID="3" Score="" />
+      <Item SubExamID="4" Score="" />
+      <Item SubExamID="5" Score="" />
+      <Item SubExamID="6" Score="" />
+    </Exam>
+  </Extension>
+</SCAttendExtension>

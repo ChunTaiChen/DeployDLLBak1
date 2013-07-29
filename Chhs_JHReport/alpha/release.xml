@@ -1,0 +1,9 @@
+﻿<Release Version="0.0.0.1">
+  <Files>
+    <File Name="JH_Chhs.StudentSemesterScoreNotification.dll" Folder="" Size="274944" Digest="jVGorKAhmP+MEq170zTNErIYji8=">
+      <AssemblyName>JH_Chhs.StudentSemesterScoreNotification, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.0</Version>
+    </File>
+    <File Name="JH_Chhs.StudentSemesterScoreNotification.pdb" Folder="" Size="99840" Digest="E1Bg2xM6E/RoYX9KUxhgHbNMS1U=" />
+  </Files>
+</Release>

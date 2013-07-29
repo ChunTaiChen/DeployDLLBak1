@@ -1,0 +1,47 @@
+﻿<Release Version="1.1.3.6">
+  <Files>
+    <File Name="ActiproSoftware.Shared.Net20.dll" Folder="" Size="229376" Digest="GUuHKfW8rGvVfmvrzYY8+FAZBWU=">
+      <AssemblyName>ActiproSoftware.Shared.Net20, Version=1.0.93.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9</AssemblyName>
+      <Version>1.0.93.0</Version>
+    </File>
+    <File Name="ActiproSoftware.Shared.Net20.xml" Folder="" Size="258237" Digest="y0uJ+A95kkyDwxne6kaPyKjnzME=" />
+    <File Name="ActiproSoftware.SyntaxEditor.Addons.Web.Net20.dll" Folder="" Size="106496" Digest="3ZuXXhwKC8k3z+oyMRSDemtH08g=">
+      <AssemblyName>ActiproSoftware.SyntaxEditor.Addons.Web.Net20, Version=4.0.262.0, Culture=neutral, PublicKeyToken=21a821480e210563</AssemblyName>
+      <Version>4.0.262.0</Version>
+    </File>
+    <File Name="ActiproSoftware.SyntaxEditor.Addons.Web.Net20.xml" Folder="" Size="80254" Digest="LhQWXqncmksBBC5zoGcn1Q57UkE=" />
+    <File Name="ActiproSoftware.SyntaxEditor.Net20.dll" Folder="" Size="1040384" Digest="KjhtnLGkeNccWRdC2YC8D4SNek4=">
+      <AssemblyName>ActiproSoftware.SyntaxEditor.Net20, Version=4.0.262.0, Culture=neutral, PublicKeyToken=21a821480e210563</AssemblyName>
+      <Version>4.0.262.0</Version>
+    </File>
+    <File Name="ActiproSoftware.SyntaxEditor.Net20.xml" Folder="" Size="1506816" Digest="R+FeECkcMe/VggDixFzDAaeFVyA=" />
+    <File Name="ActiproSoftware.WinUICore.Net20.dll" Folder="" Size="167936" Digest="ruNG9P5UgzA0YMjrn3eyVBLN/oo=">
+      <AssemblyName>ActiproSoftware.WinUICore.Net20, Version=1.0.93.0, Culture=neutral, PublicKeyToken=1eba893a2bc55de5</AssemblyName>
+      <Version>1.0.93.0</Version>
+    </File>
+    <File Name="ActiproSoftware.WinUICore.Net20.xml" Folder="" Size="255505" Digest="FhGprTFDwtpJ78VSQSavMzDpVtA=" />
+    <File Name="FISCA.Core.dll" Folder="" Size="109056" Digest="DRT2SaxU96CVYB1ZeJVwcI9vbrE=">
+      <AssemblyName>FISCA.Core, Version=1.0.1.1, Culture=neutral, PublicKeyToken=a269f410f9e2a287</AssemblyName>
+      <Version>1.0.1.1</Version>
+    </File>
+    <File Name="FISCA.Core.pdb" Folder="" Size="269824" Digest="DIGi1beP9OBmi2cQ//Q1Q7dquhY=" />
+    <File Name="FISCA.Core.xml" Folder="" Size="122440" Digest="katXM3+wxdIOdMwdeXutQ71QI6s=" />
+    <File Name="FISCA.DSAClient.dll" Folder="" Size="49664" Digest="cWfL4luWpOXur/CaMmbh/VWpF/M=">
+      <AssemblyName>FISCA.DSAClient, Version=1.0.0.6, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.0.0.6</Version>
+    </File>
+    <File Name="FISCA.DSAClient.pdb" Folder="" Size="140800" Digest="hSlk0FxDD4edl5g5IsgRiLD4fCI=" />
+    <File Name="FISCA.DSAClient.xml" Folder="" Size="60798" Digest="6zMys1EwHap7bJxeHcoMOwXBWYQ=" />
+    <File Name="ProjectManager.exe" Folder="" Size="2012160" Digest="oPdzsCZxjL2bOEKxBb2MXQAdIHY=">
+      <AssemblyName>ProjectManager, Version=1.1.3.6, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <Version>1.1.3.6</Version>
+    </File>
+    <File Name="ProjectManager.exe.config" Folder="" Size="144" Digest="cpzNzlRjZspwKGLNlX6RAlU3880=" />
+    <File Name="ProjectManager.pdb" Folder="" Size="1392128" Digest="/2sXUlF7Z2Hoei+RQQr7rKOgCW4=" />
+    <File Name="Script.exe" Folder="" Size="16896" Digest="fA55Rb11iqCq1lvf4zHffHBv61c=">
+      <AssemblyName>Script, Version=1.0.0.9, Culture=neutral, PublicKeyToken=a269f410f9e2a287</AssemblyName>
+      <Version>1.0.0.9</Version>
+    </File>
+    <File Name="Setup.config" Folder="" Size="177" Digest="eriTFO8gIRu56bJtAlvsSIWOM3k=" />
+  </Files>
+</Release>
