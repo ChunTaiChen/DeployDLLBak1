@@ -51,7 +51,7 @@
     <Reference FullName="FISCA, Version=2.1.4.0, Culture=neutral, PublicKeyToken=null" />
     <Reference FullName="SmartSchool.ExceptionHandler, Version=1.9.0.2, Culture=neutral, PublicKeyToken=null" />
   </Assembly>
-  <Assembly FullName="UpdateRecordModule_SH_D, Version=1.0.0.2, Culture=neutral, PublicKeyToken=null">
+  <Assembly FullName="UpdateRecordModule_SH_D, Version=1.0.0.4, Culture=neutral, PublicKeyToken=null">
     <Reference FullName="Campus.DocumentValidator, Version=1.0.0.6, Culture=neutral, PublicKeyToken=null" />
     <Reference FullName="SmartSchool.API.PlugIn, Version=0.0.0.3, Culture=neutral, PublicKeyToken=null" />
     <Reference FullName="FISCA.Presentation, Version=1.1.0.18, Culture=neutral, PublicKeyToken=null" />
